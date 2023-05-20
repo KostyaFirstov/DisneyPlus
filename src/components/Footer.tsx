@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
 	return (
 		<div className='footer'>
 			<div className='footer-container container'>
 				<div className='logo'>
-					<a href='#'>
-						<img src='./images/logo.svg' alt='Logo' />
-					</a>
+					<Link to={'/'}>
+						<img src='/images/logo.svg' alt='Logo' />
+					</Link>
 				</div>
 				<div className='footer__desc'>
 					Disney+ es un servicio por suscripción de pago, su contenido está

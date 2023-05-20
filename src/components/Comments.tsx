@@ -1,8 +1,10 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
+import { IMovie } from '../pages/Movies'
 
-const Comments = () => {
+const Comments: React.FC<IMovie> = ({ comments }) => {
+	console.log(comments)
 	return (
 		<section className='commentaries'>
 			<div className='title container-right'>
@@ -36,59 +38,59 @@ const Comments = () => {
 						</div>
 					</div>
 				</SwiperSlide>
-				<SwiperSlide>
-					<div className='commentaries-slide swiper-slide commentaries__item'>
-						<div className='commentaries__header'>
-							<div className='commentaries__author'>
-								<div className='author__image'>
-									<img src='./images/acc.svg' alt='Person' />
+				{comments.map((item, index) => {
+					return (
+						<SwiperSlide key={index}>
+							<div className='commentaries-slide swiper-slide commentaries__item'>
+								<div className='commentaries__header'>
+									<div className='commentaries__author'>
+										<div className='author__image'>
+											<img src='/images/acc.svg' alt='Person' />
+										</div>
+										<div className='author__name'>
+											<h3>{item.name}</h3>
+										</div>
+									</div>
+									<div className='commentaries__score'>
+										<span>{item.rating}</span>
+									</div>
 								</div>
-								<div className='author__name'>
-									<h3>Daniel Craig</h3>
+								<div className='commentaries__main'>
+									<div className='commentaries__text'>
+										<p>{item.text}</p>
+									</div>
+								</div>
+								<div className='commentaries__options'>
+									<div className='commentaries__option commentaries__option-rate'>
+										<div className='rate-like'>
+											<button>
+												<svg
+													width='26'
+													height='26'
+													viewBox='0 0 26 26'
+													fill='none'
+													xmlns='http://www.w3.org/2000/svg'
+												>
+													<path
+														d='M6.79671 10.6802V25M6.79671 10.6802L1 10.6802V25H6.79671M6.79671 10.6802L14.3261 2.00021C15.0405 1.17658 16.1645 0.822508 17.2296 1.08561L17.2985 1.10263C19.243 1.58299 20.1189 3.82183 19.0072 5.46973L15.4918 10.6802H22.1006C23.9296 10.6802 25.3014 12.3336 24.9427 14.1058L23.2037 22.6977C22.9327 24.0364 21.7432 25 20.3616 25H6.79671'
+														stroke='white'
+														strokeLinecap='round'
+														strokeLinejoin='round'
+													/>
+												</svg>
+											</button>
+											<span>0</span>
+										</div>
+									</div>
+									<div className='commentaries__option commentaries__option-date'>
+										<span className='commentaries__time'>15:35</span> /
+										02.16.2023
+									</div>
 								</div>
 							</div>
-							<div className='commentaries__score'>
-								<span>4.8</span>
-							</div>
-						</div>
-						<div className='commentaries__main'>
-							<div className='commentaries__text'>
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-									natus unde magni odit eveniet, soluta veritatis odio, itaque
-									obcaecati dignissimos facilis libero nemo. Excepturi iusto
-									possimus, autem aut veniam necessitatibus.
-								</p>
-							</div>
-						</div>
-						<div className='commentaries__options'>
-							<div className='commentaries__option commentaries__option-rate'>
-								<div className='rate-like'>
-									<button>
-										<svg
-											width='26'
-											height='26'
-											viewBox='0 0 26 26'
-											fill='none'
-											xmlns='http://www.w3.org/2000/svg'
-										>
-											<path
-												d='M6.79671 10.6802V25M6.79671 10.6802L1 10.6802V25H6.79671M6.79671 10.6802L14.3261 2.00021C15.0405 1.17658 16.1645 0.822508 17.2296 1.08561L17.2985 1.10263C19.243 1.58299 20.1189 3.82183 19.0072 5.46973L15.4918 10.6802H22.1006C23.9296 10.6802 25.3014 12.3336 24.9427 14.1058L23.2037 22.6977C22.9327 24.0364 21.7432 25 20.3616 25H6.79671'
-												stroke='white'
-												stroke-linecap='round'
-												stroke-linejoin='round'
-											/>
-										</svg>
-									</button>
-									<span>0</span>
-								</div>
-							</div>
-							<div className='commentaries__option commentaries__option-date'>
-								<span className='commentaries__time'>15:35</span> / 02.16.2023
-							</div>
-						</div>
-					</div>
-				</SwiperSlide>
+						</SwiperSlide>
+					)
+				})}
 			</Swiper>
 		</section>
 	)

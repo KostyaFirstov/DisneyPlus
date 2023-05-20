@@ -1,196 +1,565 @@
-{
-	"movies": {
-		"1": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/49B92C046117E89BC9243A68EE277A3B30D551D4599F23C10BF0B8C1E90AEFB6/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/87F1DCF36049558159913ADFD18A800DE1121771540033EC3A7651B8FE154CEB/scale?width=400&aspectRatio=1.78&format=jpeg",
-			"description": "When 11-year-old Riley moves to a new city, her Emotions team up to help her through the transition. Joy, Fear, Anger, Disgust and Sadness work together, but when Joy and Sadness get lost, they must journey through unfamiliar places to get back home.",
-			"subTitle": "2015 • 1h 35m • Coming of Age, Family, Animation",
-			"title": "Inside Out",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5C647DF3FFBFA343CFEA84AC715148F25F9E86F398B408010CC403E7654FB908/scale?width=1440&aspectRatio=1.78",
-			"type": "recommend",
-			"year": "2015",
-			"duration": "1h 35m",
-			"age": "6+"
-		},
-		"2": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4E9E81584305009D6385F6178D4B6930E97CD6EC4A3B53C818400DEF778FFA9A/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B983FF22BA64B6E19E0D3267280819B26758CFB765E8BED1099D11E320612953/scale?width=400&aspectRatio=1.78&format=jpeg",
-			"description": "Garfield is adopted by a greedy Lord with nefarious plans to open up his estate as a hunting ground.",
-			"subTitle": "2006 • 1h 19m • Family, Comedy, Kids",
-			"title": "A tail of two kitties",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/50B933E83609BEEFEDFA177A6D96DBFA7804C14F70A0B5AB314E892E65498ACF/scale?width=1440&aspectRatio=1.78",
-			"type": "new",
-			"year": "2006",
-			"duration": "1h 19m",
-			"age": "6+"
-		},
-		"3": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4F39B7E16726ECF419DD7C49E011DD95099AA20A962B0B10AA1881A70661CE45/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/706C68FF1CEA5A9C2AE0608892C2DF79E4AC1F0DDB4BFF7FE6DAFC36DAFC0286/scale?width=400&aspectRatio=1.78&format=jpeg",
-			"description": "A Chinese mom who’s sad when her grown son leaves home gets another chance at motherhood when one of her dumplings springs to life. But she finds that nothing stays cute and small forever.",
-			"subTitle": "2018 • 7m • Family, Fantasy, Kids, Animation",
-			"title": "Bao",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7AEE1F05D10FC37C873176AAA26F777FC1B71E7A6563F36C6B1B497CAB1CEC2/scale?width=1440&aspectRatio=1.78",
-			"type": "recommend",
-			"year": "2018",
-			"duration": "7m",
-			"age": "0+"
-		},
-		"4": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA1548A6B82C9991B1D38DF251A388FEA2483904510FBC73E150F67F7BDE38C0/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/0ECD36DD35658155915685271440833C29ED87E788CF8AE111AA6BCA6B939C37/scale?width=400&aspectRatio=1.78&format=jpeg",
-			"description": "When the kingdom's most wanted bandit is taken hostage by Rapunzel — a teen with 70 feet of golden hair who's looking to escape the tower where she's been locked away for years — the unlikely duo sets off on a hair-raising escapade.",
-			"subTitle": "2010 • 1h 40m • Family, Fantasy, Animation, Action-Adventure, Musical",
-			"title": "Tangled",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F70235E3463A6F246EB462ED5379F9D41D6318E80098BD40900E7AFC1C7D932D/scale?width=1440&aspectRatio=1.78",
-			"type": "trending",
-			"year": "2010",
-			"duration": "1h 40m",
-			"age": "6+"
-		},
-		"5": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/56EEBB17CC25C9FE16E334C34EF96BF7D91EC9BA3B438F88FB24E1C2AE785E03/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E486A02FA7B60669E77958D4FAE567AA5C9C57344006E1D1ADFC080719545166/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
-			"description": "Jamie Foxx leads an all-star cast in this hilarious, heart-filled adventure. Pixar’s 'Soul' introduces Joe, who lands the gig of his life at the best jazz club in town. But one misstep lands Joe in a fantastical place: The Great Before. There, he teams up with soul 22 (Tina Fey), and together they find the answers to some of life’s biggest questions.",
-			"subTitle": "2020 • 1h 49m • Family, Comedy, Fantasy, Animation, Music",
-			"title": "Soul",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E837DDE901CD036DD87A00F2D63E2F2458FAA798E62BE91F973AECCEA313A67E/scale?width=1440&aspectRatio=1.78",
-			"type": "original",
-			"year": "2020",
-			"duration": "1h 49m",
-			"age": "6+"
-		},
-		"6": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/AAC4808815AE5721A6AAB372DD14B8CE2E7E9EFF3A27942EF2B6B45EBF4E65CB/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/501783804F435A386DBC4736F529A8EF664B1817CCB0B552E52D825B85B0A97B/scale?width=400&aspectRatio=1.78&format=jpeg",
-			"description": "Moana sets sail on a daring mission to save her people. Along the way, she meets the mighty demigod Maui–together they cross the ocean on a fun-filled, action-packed voyage from Walt Disney Animation Studios.",
-			"subTitle": "2016 • 1h 47m • Family, Fantasy, Animation, Action-Adventure, Musical",
-			"title": "Moana",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9562874BAB22B22A698368819B9EBF30FEB0291543552EB2416A5A61A73F63F4/scale?width=1440&aspectRatio=1.78",
-			"type": "trending",
-			"year": "2016",
-			"duration": "1h 47m",
-			"age": "6+"
-		},
-		"7": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B409C2A425D58C32D822EB633C7CAE3DC910DC2FC62D2B1807A0BB092C531E9A/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C0A883EAB54DDDC924018D08CF4555EE72B3E9A8C214BDADF29CB82B5E2275D7/scale?width=400&aspectRatio=1.78&format=jpeg",
-			"description": "While Helen is called on to lead a campaign to bring back the Supers, Bob navigates the day-to-day heroics of “normal” life at home with Violet, Dash and Jack-Jack, whose superpowers are about to be discovered. Their mission is derailed, however, when a new villain emerges with a brilliant and dangerous plot that threatens everything. But with Frozone by their side, the Parrs can take on anything.",
-			"subTitle": "2018 • 1h 58m • Science Fiction, Family, Animation, Action-Adventure",
-			"title": "Incredibles 2",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2041CE26663867FC4EF20377B8625BD629E619452E23BCDB1AB259DD475C2EA1/scale?width=1440&aspectRatio=1.78",
-			"type": "recommend",
-			"year": "2018",
-			"duration": "1h 58m",
-			"age": "6+"
-		},
-		"8": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D53D1F5D357587A8D09067AB09FFC7096F837CBAAE02BDC3C0E75814471A1E36/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CC08686E87BDB2D83A46C9608CB2F43018381A82608C380649351A00ED0D2919/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
-			"description": "ASSEMBLED is an immersive series of documentary-style specials examining the creation of Marvel Studios’ thrilling new shows and theatrical releases.",
-			"subTitle": "2021 • 1 Season • Docuseries, Anthology",
-			"title": "Assembled",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/37D80C5D1AB0BA65C63588311EC60A07342F60F91D402C28B8E1137AF6A30549/scale?width=1440&aspectRatio=1.78",
-			"type": "original",
-			"year": "2021",
-			"duration": "58m",
-			"age": "14+"
-		},
-		"9": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2A509165105A09F9F533E2008B143BCF38D6A5859D0EBB40CCA388772005CD94/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A13BEC78ACF76FC91A94A1595A62A42CC26DFC6259332C74E061ADA379024E5C/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
-			"description": "A young rabbit embarks on a journey to dig the burrow of her dreams, despite not having a clue what she’s doing. Rather than reveal to her neighbors her imperfections, she digs herself deeper and deeper into trouble. After hitting (bed)rock bottom, she learns there is no shame in asking for help.",
-			"subTitle": "2020 • 6m • Family, Animation",
-			"title": "Burrow",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD8BBA864E290FBC03A244A488FFC8DC8365FBF2F95A122B1D57BF3772D717FD/scale?width=1440&aspectRatio=1.78",
-			"type": "original",
-			"year": "2020",
-			"duration": "6m",
-			"age": "6+"
-		},
-		"10": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/223DAE104BE1175F374C4AACAC0EB5B8B0DB9C49839AA2E10085533DDFE07A8E/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6EA416AD3B15FCC1BADC817A932A57FFF707556DB2233FFCB4CFEB7C8EEDE23C/scale?width=400&aspectRatio=1.78&format=jpeg",
-			"description": "This animated comedy focuses on the eponymous family in the town of Springfield. The head of the Simpson family, Homer, is not a typical family man. A nuclear-plant employee, he does his best to lead his family but often finds that they are leading him. The family includes loving, blue-haired matriarch Marge, troublemaking son Bart, overachieving daughter Lisa and baby Maggie.",
-			"subTitle": "1989 - 2019 • 31 Seasons • Comedy, Animation",
-			"title": "The Simpsons",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/47A6FB38D95B3A5EF5583C9EED0B698ED2992CBA4AC7222DD3269DC92DFA03A6/scale?width=1440&aspectRatio=1.78",
-			"type": "trending",
-			"year": "1989 - 2019",
-			"duration": "22m",
-			"age": "16+"
-		},
-		"11": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F6CDB6C0EB2D77EB19BCADA31F85066E001A1F61FA68F4AC3356A73FE076477F/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F8D1A6FD00ED479CC5E2E5C3E85F10EB05550748BD3C0FE76756614071968541/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
-			"description": "Marvel Studios LEGENDS traces Wanda Maximoff’s evolution from an adversary of The Avengers to a powerful ally, and highlights one special relationship destined to shape her future in unexpected ways…",
-			"subTitle": "2021 • 1 Season • Science Fiction, Fantasy, Action-Adventure",
-			"title": "Legends",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DDFF0FDF457E092EE53149CE7DB5BD14CB97E27B92D2D087E7C687B4E3073DE2/scale?width=1440&aspectRatio=1.78",
-			"type": "original",
-			"year": "2021",
-			"duration": "7m",
-			"age": "12+"
-		},
-		"12": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/09A0617D43282F1A4FA1A97DF6159B4263A8DEB9679A007B61D5E5D6E5D0A2DD/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1E0501AFBAFCA1ABB5D31DBA7D1A913B2A35D70FD3DFD804939B71901577161D/scale?width=400&aspectRatio=1.78&format=jpeg",
-			"description": "Watch with Premier Access at the same time it's in open theaters and before it's available to all Disney+ subscribers on June 4, 2021.",
-			"subTitle": "2021 • 1h 52m • Family, Fantasy, Animation, Action-Adventure",
-			"title": "Raya",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E7D8EFFDD30B2A0E205DDD9929207439B21E7595709769F2A23C50457664FFB2/scale?width=1440&aspectRatio=1.78",
-			"type": "new",
-			"year": "2021",
-			"duration": "1h 52m",
-			"age": "6+"
-		},
-		"13": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/09DAD6A5DAECB6BA9E329FFA896B18978FE4AD5540C070D7973EE53357DD4D24/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/01666FAA085FF29B709DB13975E563E5E047DAAFF7D8F331201CB73F3C30027E/scale?width=400&aspectRatio=1.78&format=jpeg",
-			"description": "When Bob Parr visits designer Edna Mode for help with his high-energy toddler, she pulls an all-nighter designing a supersuit to harness Jack-Jack’s seemingly limitless powers.",
-			"subTitle": "2018 • 7m • Family, Comedy, Animation",
-			"title": "Auntie EDNA",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A31BE6502DC7A3A01DAF58DF7E91AB6FF598A078C8FA88A1DB2D7B7E25439464/scale?width=1440&aspectRatio=1.78",
-			"type": "recommend",
-			"year": "2018",
-			"duration": "7m",
-			"age": "6+"
-		},
-		"14": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6FF2B403436E6558C08FB44B40AE334A9172FA293A8325940E8E7FF7F696E4D3/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/509E4D9F0BF98A9DC4CDD38954380782F6AB2664E503CC7652A37D18D06666BF/scale?width=400&aspectRatio=1.78&format=jpeg",
-			"description": "Mickey entertains preschoolers by inviting them to join him and his friends for a date at the Clubhouse. Using early math learning and problem solving skills, he leads kids on an interactive adventure of learning and fun.",
-			"subTitle": "2013 - 2013 • 5 Seasons • Kids, Animation",
-			"title": "Mickey mouse",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4FF3FCD567F0263430DFC33B9489CE2799AE33B50AD553DE65F03B3EA2E19828/scale?width=1440&aspectRatio=1.78",
-			"type": "trending",
-			"year": "2013 - 2013",
-			"duration": "5m",
-			"age": "12+"
-		},
-		"15": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/456A711C19899C881600F6247705E5253EB18C2471D75E5281E1FF6ACB6D2FBA/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/341AE85B6C1423B9042B5F2E786645EE551B9D546C3D263B220A4727617FD2B8/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
-			"description": "Marvel Studios’ “The Falcon and The Winter Soldier” stars Anthony Mackie as Sam Wilson aka The Falcon, and Sebastian Stan as Bucky Barnes aka The Winter Soldier. The pair, who came together in the final moments of “Avengers: Endgame,” team up on a global adventure that tests their abilities—and their patience.",
-			"subTitle": "2021 • 1 Season • Science Fiction, Action-Adventure, Buddy",
-			"title": "The falcon and the winter soldier",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4A67A42FB16607DAE7E22266D3F00181965178ED1884047C2D982EE7D89D3554/scale?width=1440&aspectRatio=1.78",
-			"type": "new",
-			"year": "2021",
-			"duration": "50m",
-			"age": "16+"
-		},
-		"16": {
-			"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/28F85D4A1F7CA135B7B20B3EDB42EDA73196C2A71C52C5400A6C2285F8E071BE/scale?width=1440&aspectRatio=1.78&format=jpeg",
-			"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4B32D8CB7C0C358E9FF348FB0338AD13F9A5836808E9EF5FADD9DBDE52FC3CAD/scale?width=400&aspectRatio=1.78&format=jpeg",
-			"description": "J-Pop band Perfume is featured in this original music and documentary series 'Disney’s My Music Story.' The show features Perfume's life stories, passion for music, Disney memories, and more.",
-			"subTitle": "2019 • 53m • Documentary, Biographical, Music",
-			"title": "My music story",
-			"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/97BB36F8B9FC053F561894DD7B1C42C4FD20E63560F481CBCB3B9D3600CFCA3B/scale?width=1440&aspectRatio=1.78",
-			"type": "new",
-			"year": "2019",
-			"duration": "53m",
-			"age": "14+"
-		}
+[
+	{
+		"id": "1",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/49B92C046117E89BC9243A68EE277A3B30D551D4599F23C10BF0B8C1E90AEFB6/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/87F1DCF36049558159913ADFD18A800DE1121771540033EC3A7651B8FE154CEB/scale?width=400&aspectRatio=1.78&format=jpeg",
+		"description": "When 11-year-old Riley moves to a new city, her Emotions team up to help her through the transition. Joy, Fear, Anger, Disgust and Sadness work together, but when Joy and Sadness get lost, they must journey through unfamiliar places to get back home.",
+		"title": "Inside Out",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5C647DF3FFBFA343CFEA84AC715148F25F9E86F398B408010CC403E7654FB908/scale?width=1440&aspectRatio=1.78",
+		"type": "recommend",
+		"year": "2015",
+		"duration": "1ч 35м",
+		"age": "6+",
+		"rating": "4.8",
+		"genres": ["Семейный", "Мультфильм", "Комедия"],
+		"members:": [
+			{
+				"name": "Эми Полер",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/2c9e1fb5-b0a8-443a-aac9-36705a0f14fe/112x168",
+				"role:": "Actress"
+			},
+			{
+				"name": "Филлис Смит",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/92b2e44e-75e6-4f71-8c5e-319b28df7b99/112x168",
+				"role:": "Actress"
+			},
+			{
+				"name": "Ричард Кайнд",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/4486454/674c992a-8188-486d-a281-4d886a2cdaa4/112x168",
+				"role:": "Producer"
+			},
+			{
+				"name": "Билл Хейдер",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/ba7af2d1-25e9-4e0e-bfad-545a41ec3ee0/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Льюис Блэк",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/33c59ef3-f418-4c72-8d6a-6a9a1bfb789f/112x168",
+				"role:": "Filmmaker"
+			}
+		],
+		"popularity": "82",
+		"comments": [
+			{
+				"name": "Daniel Craig",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum natus unde magni odit eveniet, soluta veritatis odio, itaque obcaecati dignissimos facilis libero nemo. Excepturi iusto possimus, autem aut veniam necessitatibus.",
+				"date": "15:35 / 02.16.2023",
+				"rating": "9.6"
+			}
+		]
+	},
+	{
+		"id": "2",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4E9E81584305009D6385F6178D4B6930E97CD6EC4A3B53C818400DEF778FFA9A/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B983FF22BA64B6E19E0D3267280819B26758CFB765E8BED1099D11E320612953/scale?width=400&aspectRatio=1.78&format=jpeg",
+		"description": "Garfield is adopted by a greedy Lord with nefarious plans to open up his estate as a hunting ground.",
+		"title": "A tail of two kitties",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/50B933E83609BEEFEDFA177A6D96DBFA7804C14F70A0B5AB314E892E65498ACF/scale?width=1440&aspectRatio=1.78",
+		"type": "new",
+		"year": "2006",
+		"duration": "1ч 19м",
+		"age": "6+",
+		"rating": "6.8",
+		"genres": ["Семейный", "Детский", "Комедия"],
+		"members:": [
+			{
+				"name": "Брекин Мейер",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/f2382263-fbf6-48da-b25a-06bf4b4282be/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Дженнифер Лав Хьюитт",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/f967f391-7a3c-416c-9af5-7e18d7d2f4d0/112x168",
+				"role:": "Actress"
+			},
+			{
+				"name": "Стивен Тоболовски",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/739cb206-f8f2-414f-ba68-3d362fc67d39/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Билл Мюррей",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/2073f038-8a65-41d1-bf4d-a9a65535b98b/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Ивэн Арнольд",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/07e7a8c6-53f5-4458-9722-9b4548efb448/112x168",
+				"role:": "Producer"
+			}
+		],
+		"popularity": "92",
+		"comments": []
+	},
+	{
+		"id": "3",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4F39B7E16726ECF419DD7C49E011DD95099AA20A962B0B10AA1881A70661CE45/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/706C68FF1CEA5A9C2AE0608892C2DF79E4AC1F0DDB4BFF7FE6DAFC36DAFC0286/scale?width=400&aspectRatio=1.78&format=jpeg",
+		"description": "A Chinese mom who’s sad when her grown son leaves home gets another chance at motherhood when one of her dumplings springs to life. But she finds that nothing stays cute and small forever.",
+		"title": "Bao",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7AEE1F05D10FC37C873176AAA26F777FC1B71E7A6563F36C6B1B497CAB1CEC2/scale?width=1440&aspectRatio=1.78",
+		"type": "recommend",
+		"year": "2018",
+		"duration": "7м",
+		"age": "0+",
+		"rating": "8.5",
+		"genres": ["Семейный", "Детский", "Комедия", "Фантастика"],
+		"members:": [
+			{
+				"name": "Дэниэл Кэйлин",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/d48e03cf-3571-4aab-8189-ec20b6ac9267/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Синди Лау",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/ae018e22-e146-4fb3-b271-255ee2b8c871/112x168",
+				"role:": "Actress"
+			},
+			{
+				"name": "Шермейн Йео",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/5cccafec-854c-4575-a24f-371cb80d381e/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Тим Чжан",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/464b0906-562a-47ab-9481-0d62f358cb98/112x168",
+				"role:": "Acter"
+			}
+		],
+		"popularity": "56",
+		"comments": []
+	},
+	{
+		"id": "4",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA1548A6B82C9991B1D38DF251A388FEA2483904510FBC73E150F67F7BDE38C0/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/0ECD36DD35658155915685271440833C29ED87E788CF8AE111AA6BCA6B939C37/scale?width=400&aspectRatio=1.78&format=jpeg",
+		"description": "When the kingdoms most wanted bandit is taken hostage by Rapunzel — a teen with 70 feet of golden hair who is looking to escape the tower where shes been locked away for years — the unlikely duo sets off on a hair-raising escapade.",
+		"title": "Tangled",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F70235E3463A6F246EB462ED5379F9D41D6318E80098BD40900E7AFC1C7D932D/scale?width=1440&aspectRatio=1.78",
+		"type": "trending",
+		"year": "2010",
+		"duration": "1ч 40м",
+		"age": "6+",
+		"rating": "3.7",
+		"genres": ["Музыкальный", "Приключения", "Экшн", "Фантастика"],
+		"popularity": "33",
+		"comments": []
+	},
+	{
+		"id": "5",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/56EEBB17CC25C9FE16E334C34EF96BF7D91EC9BA3B438F88FB24E1C2AE785E03/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E486A02FA7B60669E77958D4FAE567AA5C9C57344006E1D1ADFC080719545166/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
+		"description": "Jamie Foxx leads an all-star cast in this hilarious, heart-filled adventure. Pixar’s 'Soul' introduces Joe, who lands the gig of his life at the best jazz club in town. But one misstep lands Joe in a fantastical place: The Great Before. There, he teams up with soul 22 (Tina Fey), and together they find the answers to some of life’s biggest questions.",
+		"title": "Soul",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E837DDE901CD036DD87A00F2D63E2F2458FAA798E62BE91F973AECCEA313A67E/scale?width=1440&aspectRatio=1.78",
+		"type": "original",
+		"year": "2020",
+		"duration": "1ч 49м",
+		"age": "6+",
+		"rating": "4.5",
+		"genres": ["Комедия", "Приключения", "Семейный", "Фантастика"],
+		"members:": [
+			{
+				"name": "Джейми Фокс",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/962e6fd5-203c-4da1-a90c-312cc08e05bc/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Тина Фей",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/3b08bd3a-830a-40dc-8680-e5dae895baa5/112x168",
+				"role:": "Actress"
+			},
+			{
+				"name": "Грэм Нортон",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/dc3128a1-5514-4c35-a985-8b6e71352563/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Доннел Роулингс",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/f2c19af0-e741-4976-965c-fc6b255289e9/112x168",
+				"role:": "Acter"
+			}
+		],
+		"popularity": "67",
+		"comments": []
+	},
+	{
+		"id": "6",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/AAC4808815AE5721A6AAB372DD14B8CE2E7E9EFF3A27942EF2B6B45EBF4E65CB/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/501783804F435A386DBC4736F529A8EF664B1817CCB0B552E52D825B85B0A97B/scale?width=400&aspectRatio=1.78&format=jpeg",
+		"description": "Moana sets sail on a daring mission to save her people. Along the way, she meets the mighty demigod Maui–together they cross the ocean on a fun-filled, action-packed voyage from Walt Disney Animation Studios.",
+		"title": "Moana",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9562874BAB22B22A698368819B9EBF30FEB0291543552EB2416A5A61A73F63F4/scale?width=1440&aspectRatio=1.78",
+		"type": "trending",
+		"year": "2016",
+		"duration": "1ч 47м",
+		"age": "6+",
+		"rating": "9.5",
+		"genres": ["Музыкальный", "Приключения", "Семейный", "Фантастика"],
+		"members:": [
+			{
+				"name": "Дуэйн Джонсон",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/9a22df32-0892-47d9-b5fb-56bf883d1a33/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Николь Шерзингер",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/fb79b1fc-e1fd-43b1-aad4-50119d3e17aa/112x168",
+				"role:": "Actress"
+			},
+			{
+				"name": "Темуэра Моррисон",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/1c358825-12a3-47eb-a2fa-f7f06f3ab1ee/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Алан Тьюдик",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/0fc9ace2-46bc-4e01-bddf-9085881ffff4/112x168",
+				"role:": "Acter"
+			}
+		],
+		"popularity": "93",
+		"comments": []
+	},
+	{
+		"id": "7",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B409C2A425D58C32D822EB633C7CAE3DC910DC2FC62D2B1807A0BB092C531E9A/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C0A883EAB54DDDC924018D08CF4555EE72B3E9A8C214BDADF29CB82B5E2275D7/scale?width=400&aspectRatio=1.78&format=jpeg",
+		"description": "While Helen is called on to lead a campaign to bring back the Supers, Bob navigates the day-to-day heroics of “normal” life at home with Violet, Dash and Jack-Jack, whose superpowers are about to be discovered. Their mission is derailed, however, when a new villain emerges with a brilliant and dangerous plot that threatens everything. But with Frozone by their side, the Parrs can take on anything.",
+		"title": "Incredibles 2",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2041CE26663867FC4EF20377B8625BD629E619452E23BCDB1AB259DD475C2EA1/scale?width=1440&aspectRatio=1.78",
+		"type": "recommend",
+		"year": "2018",
+		"duration": "1ч 58м",
+		"age": "6+",
+		"rating": "2.4",
+		"genres": ["Научная-фантастика", "Приключения", "Семейный"],
+		"members:": [
+			{
+				"name": "Боб Оденкёрк",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/0f64539d-b236-4e01-8791-f19233705c59/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Холли Хантер",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/76373ae1-429f-4c5f-adf9-03319093c601/112x168",
+				"role:": "Actress"
+			},
+			{
+				"name": "Стивен Тоболовски",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/739cb206-f8f2-414f-ba68-3d362fc67d39/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Сэмюэл Л. Джексон",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/2c4a3629-917c-431e-864e-c6e03b1b8b3a/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Крэйг Т. Нельсон",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/7015796b-3cde-4c07-9f56-b56edaea0437/112x168",
+				"role:": "Producer"
+			}
+		],
+		"popularity": "98",
+		"comments": []
+	},
+	{
+		"id": "8",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D53D1F5D357587A8D09067AB09FFC7096F837CBAAE02BDC3C0E75814471A1E36/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CC08686E87BDB2D83A46C9608CB2F43018381A82608C380649351A00ED0D2919/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
+		"description": "ASSEMBLED is an immersive series of documentary-style specials examining the creation of Marvel Studios’ thrilling new shows and theatrical releases.",
+		"title": "Assembled",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/37D80C5D1AB0BA65C63588311EC60A07342F60F91D402C28B8E1137AF6A30549/scale?width=1440&aspectRatio=1.78",
+		"type": "original",
+		"year": "2021",
+		"duration": "58м",
+		"age": "14+",
+		"rating": "5.5",
+		"genres": ["Документальный", "Антология"],
+		"members:": [
+			{
+				"name": "Кевин Файги",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/ed8fea5a-b556-4ea0-9a70-58cc2dd65479/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Виктория Алонсо",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/5e704b0d-2703-4055-942c-34fc72d9dd39/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Сэмюэл Л. Джексон",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/2c4a3629-917c-431e-864e-c6e03b1b8b3a/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Майкл Уолдрон",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/371503d9-33a8-4e87-9882-4ae45c3e0531/112x168",
+				"role:": "Producer"
+			}
+		],
+		"popularity": "78",
+		"comments": []
+	},
+	{
+		"id": "9",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2A509165105A09F9F533E2008B143BCF38D6A5859D0EBB40CCA388772005CD94/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A13BEC78ACF76FC91A94A1595A62A42CC26DFC6259332C74E061ADA379024E5C/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
+		"description": "A young rabbit embarks on a journey to dig the burrow of her dreams, despite not having a clue what she’s doing. Rather than reveal to her neighbors her imperfections, she digs herself deeper and deeper into trouble. After hitting (bed)rock bottom, she learns there is no shame in asking for help.",
+		"title": "Burrow",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD8BBA864E290FBC03A244A488FFC8DC8365FBF2F95A122B1D57BF3772D717FD/scale?width=1440&aspectRatio=1.78",
+		"type": "original",
+		"year": "2020",
+		"duration": "6м",
+		"age": "6+",
+		"rating": "7.4",
+		"genres": ["Мультфильм", "Семейный"],
+		"members:": [
+			{
+				"name": "Эндрю Хименез",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/7e439846-9fa9-4e3b-9f99-cce02d7a468f/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Мадлен Шарафьян",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/23691b23-2598-4087-9270-90b0d3f540c1/112x168",
+				"role:": "Producer"
+			}
+		],
+		"popularity": "15",
+		"comments": []
+	},
+	{
+		"id": "10",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/223DAE104BE1175F374C4AACAC0EB5B8B0DB9C49839AA2E10085533DDFE07A8E/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6EA416AD3B15FCC1BADC817A932A57FFF707556DB2233FFCB4CFEB7C8EEDE23C/scale?width=400&aspectRatio=1.78&format=jpeg",
+		"description": "This animated comedy focuses on the eponymous family in the town of Springfield. The head of the Simpson family, Homer, is not a typical family man. A nuclear-plant employee, he does his best to lead his family but often finds that they are leading him. The family includes loving, blue-haired matriarch Marge, troublemaking son Bart, overachieving daughter Lisa and baby Maggie.",
+		"title": "The Simpsons",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/47A6FB38D95B3A5EF5583C9EED0B698ED2992CBA4AC7222DD3269DC92DFA03A6/scale?width=1440&aspectRatio=1.78",
+		"type": "trending",
+		"year": "1989 - 2019",
+		"duration": "22м",
+		"age": "16+",
+		"rating": "10.0",
+		"genres": ["Комедия", "Мультфильм"],
+		"members:": [
+			{
+				"name": "Мэтт Грейнинг",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/7e439846-9fa9-4e3b-9f99-cce02d7a468f/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Микель Б. Андерсон",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/946a0352-e9c4-4115-af7e-25cff0edf3d6/112x168",
+				"role:": "Producer"
+			},
+			{
+				"name": "Джим Рирдон",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/4c7809cd-f716-46eb-a976-d1b7a6be5829/112x168",
+				"role:": "Producer"
+			}
+		],
+		"popularity": "24",
+		"comments": []
+	},
+	{
+		"id": "11",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F6CDB6C0EB2D77EB19BCADA31F85066E001A1F61FA68F4AC3356A73FE076477F/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F8D1A6FD00ED479CC5E2E5C3E85F10EB05550748BD3C0FE76756614071968541/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
+		"description": "Marvel Studios LEGENDS traces Wanda Maximoff’s evolution from an adversary of The Avengers to a powerful ally, and highlights one special relationship destined to shape her future in unexpected ways…",
+		"title": "Legends",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DDFF0FDF457E092EE53149CE7DB5BD14CB97E27B92D2D087E7C687B4E3073DE2/scale?width=1440&aspectRatio=1.78",
+		"type": "original",
+		"year": "2021",
+		"duration": "7м",
+		"age": "12+",
+		"rating": "7.1",
+		"genres": ["Научная-фантастика", "Приключения", "Экшн"],
+		"members:": [
+			{
+				"name": "Дэниэл Стрэйндж",
+				"image": "https://www.kinopoisk.ru/images/sm_actor/1171303.jpg",
+				"role:": "Producer"
+			},
+			{
+				"name": "Брентон Ковингтон",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/551f58d2-f7ae-4360-bd09-7467304e6e49/112x168",
+				"role:": "Producer"
+			}
+		],
+		"popularity": "33",
+		"comments": []
+	},
+	{
+		"id": "12",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/09A0617D43282F1A4FA1A97DF6159B4263A8DEB9679A007B61D5E5D6E5D0A2DD/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1E0501AFBAFCA1ABB5D31DBA7D1A913B2A35D70FD3DFD804939B71901577161D/scale?width=400&aspectRatio=1.78&format=jpeg",
+		"description": "Watch with Premier Access at the same time it's in open theaters and before it's available to all Disney+ subscribers on June 4, 2021.",
+		"title": "Raya",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E7D8EFFDD30B2A0E205DDD9929207439B21E7595709769F2A23C50457664FFB2/scale?width=1440&aspectRatio=1.78",
+		"type": "new",
+		"year": "2021",
+		"duration": "1ч 52м",
+		"age": "6+",
+		"rating": "5.5",
+		"genres": ["Семейный", "Комедия", "Фантастика"],
+		"members:": [
+			{
+				"name": "Дон Холл",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/7f9b760b-18ce-4da7-b20e-256bd7dd5d2b/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Пол Бриггс",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/21495e97-106f-4040-9af1-02d4ff00be2e/112x168",
+				"role:": "Producer"
+			},
+			{
+				"name": "Джаред Буш",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/aef66a02-3ec1-4668-84dc-5039ad5359d2/112x168",
+				"role:": "Producer"
+			}
+		],
+		"popularity": "75",
+		"comments": []
+	},
+	{
+		"id": "13",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/09DAD6A5DAECB6BA9E329FFA896B18978FE4AD5540C070D7973EE53357DD4D24/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/01666FAA085FF29B709DB13975E563E5E047DAAFF7D8F331201CB73F3C30027E/scale?width=400&aspectRatio=1.78&format=jpeg",
+		"description": "When Bob Parr visits designer Edna Mode for help with his high-energy toddler, she pulls an all-nighter designing a supersuit to harness Jack-Jack’s seemingly limitless powers.",
+		"title": "Auntie EDNA",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A31BE6502DC7A3A01DAF58DF7E91AB6FF598A078C8FA88A1DB2D7B7E25439464/scale?width=1440&aspectRatio=1.78",
+		"type": "recommend",
+		"year": "2018",
+		"duration": "7м",
+		"age": "6+",
+		"rating": "2.4",
+		"genres": ["Семейный", "Комедия", "Мультфильм"],
+		"members:": [
+			{
+				"name": "Брэд Бёрд",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/378584d7-f1f9-49b0-8d93-30b77982cad0/112x168",
+				"role:": "Producer"
+			}
+		],
+		"popularity": "45",
+		"comments": []
+	},
+	{
+		"id": "14",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6FF2B403436E6558C08FB44B40AE334A9172FA293A8325940E8E7FF7F696E4D3/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/509E4D9F0BF98A9DC4CDD38954380782F6AB2664E503CC7652A37D18D06666BF/scale?width=400&aspectRatio=1.78&format=jpeg",
+		"description": "Mickey entertains preschoolers by inviting them to join him and his friends for a date at the Clubhouse. Using early math learning and problem solving skills, he leads kids on an interactive adventure of learning and fun.",
+		"title": "Mickey mouse",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4FF3FCD567F0263430DFC33B9489CE2799AE33B50AD553DE65F03B3EA2E19828/scale?width=1440&aspectRatio=1.78",
+		"type": "trending",
+		"year": "2013 - 2013",
+		"duration": "5м",
+		"age": "12+",
+		"rating": "7.0",
+		"genres": ["Детский", "Мультфильм"],
+		"members:": [
+			{
+				"name": "Билл Фармер",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/f86f950e-a941-4d22-a36c-d0f6016ff18c/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Холли Хантер",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/76373ae1-429f-4c5f-adf9-03319093c601/112x168",
+				"role:": "Actress"
+			},
+			{
+				"name": "Стивен Тоболовски",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/739cb206-f8f2-414f-ba68-3d362fc67d39/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Пол Рудиш",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/b3054daf-f6cd-4eb5-9a89-7416d27bcce8/112x168",
+				"role:": "Producer"
+			}
+		],
+		"popularity": "100",
+		"comments": []
+	},
+	{
+		"id": "15",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/456A711C19899C881600F6247705E5253EB18C2471D75E5281E1FF6ACB6D2FBA/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/341AE85B6C1423B9042B5F2E786645EE551B9D546C3D263B220A4727617FD2B8/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
+		"description": "Marvel Studios’ “The Falcon and The Winter Soldier” stars Anthony Mackie as Sam Wilson aka The Falcon, and Sebastian Stan as Bucky Barnes aka The Winter Soldier. The pair, who came together in the final moments of “Avengers: Endgame,” team up on a global adventure that tests their abilities—and their patience.",
+		"title": "The falcon and the winter soldier",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4A67A42FB16607DAE7E22266D3F00181965178ED1884047C2D982EE7D89D3554/scale?width=1440&aspectRatio=1.78",
+		"type": "new",
+		"year": "2021",
+		"duration": "50м",
+		"age": "16+",
+		"rating": "8.8",
+		"genres": ["Научная-фантастика", "Приключения", "Экшн"],
+		"members:": [
+			{
+				"name": "Билл Фармер",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/f86f950e-a941-4d22-a36c-d0f6016ff18c/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Холли Хантер",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/76373ae1-429f-4c5f-adf9-03319093c601/112x168",
+				"role:": "Actress"
+			},
+			{
+				"name": "Стивен Тоболовски",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/739cb206-f8f2-414f-ba68-3d362fc67d39/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Пол Рудиш",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/b3054daf-f6cd-4eb5-9a89-7416d27bcce8/112x168",
+				"role:": "Producer"
+			}
+		],
+		"popularity": "35",
+		"comments": []
+	},
+	{
+		"id": "16",
+		"backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/28F85D4A1F7CA135B7B20B3EDB42EDA73196C2A71C52C5400A6C2285F8E071BE/scale?width=1440&aspectRatio=1.78&format=jpeg",
+		"cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4B32D8CB7C0C358E9FF348FB0338AD13F9A5836808E9EF5FADD9DBDE52FC3CAD/scale?width=400&aspectRatio=1.78&format=jpeg",
+		"description": "J-Pop band Perfume is featured in this original music and documentary series Disney’s My Music Story. The show features Perfume's life stories, passion for music, Disney memories, and more.",
+		"title": "My music story",
+		"titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/97BB36F8B9FC053F561894DD7B1C42C4FD20E63560F481CBCB3B9D3600CFCA3B/scale?width=1440&aspectRatio=1.78",
+		"type": "new",
+		"year": "2019",
+		"duration": "53м",
+		"age": "14+",
+		"rating": "4.8",
+		"genres": ["Биографический", "Документальный", "Музыкальный"],
+		"members:": [
+			{
+				"name": "Билл Фармер",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/f86f950e-a941-4d22-a36c-d0f6016ff18c/112x168",
+				"role:": "Acter"
+			},
+			{
+				"name": "Холли Хантер",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/76373ae1-429f-4c5f-adf9-03319093c601/112x168",
+				"role:": "Actress"
+			},
+			{
+				"name": "Стивен Тоболовски",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/739cb206-f8f2-414f-ba68-3d362fc67d39/112x168",
+				"role:": "Filmmaker"
+			},
+			{
+				"name": "Пол Рудиш",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/b3054daf-f6cd-4eb5-9a89-7416d27bcce8/112x168",
+				"role:": "Producer"
+			}
+		],
+		"popularity": "55",
+		"comments": []
 	}
-}
+]

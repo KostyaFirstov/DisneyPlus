@@ -1,18 +1,16 @@
 import React from 'react'
-import Header from '../components/Header'
 import MovieHeader from '../components/MovieHeader'
 import TopMovies from '../components/TopMovies'
 import Brands from '../components/Brands'
-import Footer from '../components/Footer'
+import Slider from '../components/Slider'
 
 const Home = () => {
 	return (
 		<>
-			<Header />
-			<MovieHeader />
+			{/* <MovieHeader {...[]} /> */}
 			<Brands />
 			<TopMovies />
-			<Footer />
+			<Slider name='Топ фильмов' />
 		</>
 	)
 }

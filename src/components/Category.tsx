@@ -1,16 +1,10 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import { Slider } from './Slider'
 
 const Category = () => {
 	return (
-		<>
-			<Header />
+		<div>
 			<h1>Marvel</h1>
-			<Slider />
-			<Footer />
-		</>
+		</div>
 	)
 }
 

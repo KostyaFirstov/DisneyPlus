@@ -3,12 +3,16 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper'
 import 'swiper/css'
 
-export const Slider = () => {
+type SliderProps = {
+	name: string
+}
+
+const Slider: React.FC<SliderProps> = ({ name }) => {
 	return (
 		<section className='movies'>
 			<div className='movies__container'>
 				<div className='movies__title title container-right'>
-					<h2>Мы рекомендуем вам</h2>
+					<h2>{name}</h2>
 					<svg
 						width='24'
 						height='24'
@@ -50,3 +54,5 @@ export const Slider = () => {
 		</section>
 	)
 }
+
+export default Slider
