@@ -1,7 +1,31 @@
 import React from 'react'
-import { IMovie } from '../pages/Movies'
 
-const MovieHeader: React.FC<IMovie> = ({
+export type MovieHeaderProps = {
+	id: number
+	backgroundImg: string
+	cardImg: string
+	description: string
+	duration: string
+	title: string
+	titleImg: string
+	type: string
+	year: string
+	age: string
+	rating: string
+	genres: string[]
+	members: { name: string; image: string; role: string }[]
+	popularity: string
+	comments: {
+		name: string
+		text: string
+		date: string
+		rating: string
+		likes: string
+	}[]
+	onOpenModal: () => any
+}
+
+const MovieHeader: React.FC<MovieHeaderProps> = ({
 	backgroundImg,
 	description,
 	duration,
@@ -10,7 +34,8 @@ const MovieHeader: React.FC<IMovie> = ({
 	year,
 	age,
 	rating,
-	genres
+	genres,
+	onOpenModal
 }) => {
 	return (
 		<article className='movie'>
@@ -34,7 +59,10 @@ const MovieHeader: React.FC<IMovie> = ({
 						<div className='movie__option movie__information'>
 							<button className='content__btn-unfill'>Смотреть трейлер</button>
 						</div>
-						<div className='movie__option movie__option-creaters'>
+						<div
+							onClick={onOpenModal}
+							className='movie__option movie__option-creaters'
+						>
 							<button>
 								<svg
 									width='48'

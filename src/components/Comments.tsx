@@ -1,10 +1,13 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import { IMovie } from '../pages/Movies'
+import { MovieHeaderProps } from './MovieHeader'
 
-const Comments: React.FC<IMovie> = ({ comments }) => {
-	console.log(comments)
+const Comments: React.FC<MovieHeaderProps> = ({
+	comments,
+
+	onOpenModal
+}) => {
 	return (
 		<section className='commentaries'>
 			<div className='title container-right'>
@@ -18,7 +21,7 @@ const Comments: React.FC<IMovie> = ({ comments }) => {
 				grabCursor={true}
 				freeMode={true}
 			>
-				<SwiperSlide>
+				<SwiperSlide onClick={onOpenModal}>
 					<div className='commentaries-slide swiper-slide commentaries__item commentaries__item-add'>
 						<div className='commentaries__item-add-inner'>
 							<h3>Есть что рассказать?</h3>
@@ -79,7 +82,7 @@ const Comments: React.FC<IMovie> = ({ comments }) => {
 													/>
 												</svg>
 											</button>
-											<span>0</span>
+											<span>{item.likes}</span>
 										</div>
 									</div>
 									<div className='commentaries__option commentaries__option-date'>

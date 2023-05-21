@@ -9,34 +9,34 @@
 		"type": "recommend",
 		"year": "2015",
 		"duration": "1ч 35м",
-		"age": "6+",
+		"age": "6",
 		"rating": "4.8",
 		"genres": ["Семейный", "Мультфильм", "Комедия"],
-		"members:": [
+		"members": [
 			{
 				"name": "Эми Полер",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/2c9e1fb5-b0a8-443a-aac9-36705a0f14fe/112x168",
-				"role:": "Actress"
+				"role": "Actress"
 			},
 			{
 				"name": "Филлис Смит",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/92b2e44e-75e6-4f71-8c5e-319b28df7b99/112x168",
-				"role:": "Actress"
+				"role": "Actress"
 			},
 			{
 				"name": "Ричард Кайнд",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/4486454/674c992a-8188-486d-a281-4d886a2cdaa4/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			},
 			{
 				"name": "Билл Хейдер",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/ba7af2d1-25e9-4e0e-bfad-545a41ec3ee0/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Льюис Блэк",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/33c59ef3-f418-4c72-8d6a-6a9a1bfb789f/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			}
 		],
 		"popularity": "82",
@@ -45,7 +45,8 @@
 				"name": "Daniel Craig",
 				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum natus unde magni odit eveniet, soluta veritatis odio, itaque obcaecati dignissimos facilis libero nemo. Excepturi iusto possimus, autem aut veniam necessitatibus.",
 				"date": "15:35 / 02.16.2023",
-				"rating": "9.6"
+				"rating": "9.6",
+				"likes": "1"
 			}
 		]
 	},
@@ -59,34 +60,34 @@
 		"type": "new",
 		"year": "2006",
 		"duration": "1ч 19м",
-		"age": "6+",
+		"age": "6",
 		"rating": "6.8",
 		"genres": ["Семейный", "Детский", "Комедия"],
-		"members:": [
+		"members": [
 			{
 				"name": "Брекин Мейер",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/f2382263-fbf6-48da-b25a-06bf4b4282be/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Дженнифер Лав Хьюитт",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/f967f391-7a3c-416c-9af5-7e18d7d2f4d0/112x168",
-				"role:": "Actress"
+				"role": "Actress"
 			},
 			{
 				"name": "Стивен Тоболовски",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/739cb206-f8f2-414f-ba68-3d362fc67d39/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Билл Мюррей",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/2073f038-8a65-41d1-bf4d-a9a65535b98b/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Ивэн Арнольд",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/07e7a8c6-53f5-4458-9722-9b4548efb448/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			}
 		],
 		"popularity": "92",
@@ -102,29 +103,29 @@
 		"type": "recommend",
 		"year": "2018",
 		"duration": "7м",
-		"age": "0+",
+		"age": "0",
 		"rating": "8.5",
 		"genres": ["Семейный", "Детский", "Комедия", "Фантастика"],
-		"members:": [
+		"members": [
 			{
 				"name": "Дэниэл Кэйлин",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/d48e03cf-3571-4aab-8189-ec20b6ac9267/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Синди Лау",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/ae018e22-e146-4fb3-b271-255ee2b8c871/112x168",
-				"role:": "Actress"
+				"role": "Actress"
 			},
 			{
 				"name": "Шермейн Йео",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/5cccafec-854c-4575-a24f-371cb80d381e/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Тим Чжан",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/464b0906-562a-47ab-9481-0d62f358cb98/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			}
 		],
 		"popularity": "56",
@@ -140,10 +141,32 @@
 		"type": "trending",
 		"year": "2010",
 		"duration": "1ч 40м",
-		"age": "6+",
+		"age": "6",
 		"rating": "3.7",
 		"genres": ["Музыкальный", "Приключения", "Экшн", "Фантастика"],
 		"popularity": "33",
+		"members": [
+			{
+				"name": "Джейми Фокс",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/962e6fd5-203c-4da1-a90c-312cc08e05bc/112x168",
+				"role": "Acter"
+			},
+			{
+				"name": "Тина Фей",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/3b08bd3a-830a-40dc-8680-e5dae895baa5/112x168",
+				"role": "Actress"
+			},
+			{
+				"name": "Грэм Нортон",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/dc3128a1-5514-4c35-a985-8b6e71352563/112x168",
+				"role": "Filmmaker"
+			},
+			{
+				"name": "Доннел Роулингс",
+				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/f2c19af0-e741-4976-965c-fc6b255289e9/112x168",
+				"role": "Acter"
+			}
+		],
 		"comments": []
 	},
 	{
@@ -156,29 +179,29 @@
 		"type": "original",
 		"year": "2020",
 		"duration": "1ч 49м",
-		"age": "6+",
+		"age": "6",
 		"rating": "4.5",
 		"genres": ["Комедия", "Приключения", "Семейный", "Фантастика"],
-		"members:": [
+		"members": [
 			{
 				"name": "Джейми Фокс",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/962e6fd5-203c-4da1-a90c-312cc08e05bc/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Тина Фей",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/3b08bd3a-830a-40dc-8680-e5dae895baa5/112x168",
-				"role:": "Actress"
+				"role": "Actress"
 			},
 			{
 				"name": "Грэм Нортон",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/dc3128a1-5514-4c35-a985-8b6e71352563/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Доннел Роулингс",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/f2c19af0-e741-4976-965c-fc6b255289e9/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			}
 		],
 		"popularity": "67",
@@ -194,29 +217,29 @@
 		"type": "trending",
 		"year": "2016",
 		"duration": "1ч 47м",
-		"age": "6+",
+		"age": "6",
 		"rating": "9.5",
 		"genres": ["Музыкальный", "Приключения", "Семейный", "Фантастика"],
-		"members:": [
+		"members": [
 			{
 				"name": "Дуэйн Джонсон",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/9a22df32-0892-47d9-b5fb-56bf883d1a33/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Николь Шерзингер",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/fb79b1fc-e1fd-43b1-aad4-50119d3e17aa/112x168",
-				"role:": "Actress"
+				"role": "Actress"
 			},
 			{
 				"name": "Темуэра Моррисон",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/1c358825-12a3-47eb-a2fa-f7f06f3ab1ee/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Алан Тьюдик",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/0fc9ace2-46bc-4e01-bddf-9085881ffff4/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			}
 		],
 		"popularity": "93",
@@ -232,34 +255,34 @@
 		"type": "recommend",
 		"year": "2018",
 		"duration": "1ч 58м",
-		"age": "6+",
+		"age": "6",
 		"rating": "2.4",
 		"genres": ["Научная-фантастика", "Приключения", "Семейный"],
-		"members:": [
+		"members": [
 			{
 				"name": "Боб Оденкёрк",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/0f64539d-b236-4e01-8791-f19233705c59/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Холли Хантер",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/76373ae1-429f-4c5f-adf9-03319093c601/112x168",
-				"role:": "Actress"
+				"role": "Actress"
 			},
 			{
 				"name": "Стивен Тоболовски",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/739cb206-f8f2-414f-ba68-3d362fc67d39/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Сэмюэл Л. Джексон",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/2c4a3629-917c-431e-864e-c6e03b1b8b3a/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Крэйг Т. Нельсон",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/7015796b-3cde-4c07-9f56-b56edaea0437/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			}
 		],
 		"popularity": "98",
@@ -275,29 +298,29 @@
 		"type": "original",
 		"year": "2021",
 		"duration": "58м",
-		"age": "14+",
+		"age": "14",
 		"rating": "5.5",
 		"genres": ["Документальный", "Антология"],
-		"members:": [
+		"members": [
 			{
 				"name": "Кевин Файги",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/ed8fea5a-b556-4ea0-9a70-58cc2dd65479/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Виктория Алонсо",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/5e704b0d-2703-4055-942c-34fc72d9dd39/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Сэмюэл Л. Джексон",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/2c4a3629-917c-431e-864e-c6e03b1b8b3a/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Майкл Уолдрон",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/371503d9-33a8-4e87-9882-4ae45c3e0531/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			}
 		],
 		"popularity": "78",
@@ -313,19 +336,19 @@
 		"type": "original",
 		"year": "2020",
 		"duration": "6м",
-		"age": "6+",
+		"age": "6",
 		"rating": "7.4",
 		"genres": ["Мультфильм", "Семейный"],
-		"members:": [
+		"members": [
 			{
 				"name": "Эндрю Хименез",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/7e439846-9fa9-4e3b-9f99-cce02d7a468f/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Мадлен Шарафьян",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/23691b23-2598-4087-9270-90b0d3f540c1/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			}
 		],
 		"popularity": "15",
@@ -341,24 +364,24 @@
 		"type": "trending",
 		"year": "1989 - 2019",
 		"duration": "22м",
-		"age": "16+",
+		"age": "16",
 		"rating": "10.0",
 		"genres": ["Комедия", "Мультфильм"],
-		"members:": [
+		"members": [
 			{
 				"name": "Мэтт Грейнинг",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/7e439846-9fa9-4e3b-9f99-cce02d7a468f/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Микель Б. Андерсон",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/946a0352-e9c4-4115-af7e-25cff0edf3d6/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			},
 			{
 				"name": "Джим Рирдон",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/4c7809cd-f716-46eb-a976-d1b7a6be5829/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			}
 		],
 		"popularity": "24",
@@ -374,19 +397,19 @@
 		"type": "original",
 		"year": "2021",
 		"duration": "7м",
-		"age": "12+",
+		"age": "12",
 		"rating": "7.1",
 		"genres": ["Научная-фантастика", "Приключения", "Экшн"],
-		"members:": [
+		"members": [
 			{
 				"name": "Дэниэл Стрэйндж",
 				"image": "https://www.kinopoisk.ru/images/sm_actor/1171303.jpg",
-				"role:": "Producer"
+				"role": "Producer"
 			},
 			{
 				"name": "Брентон Ковингтон",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/551f58d2-f7ae-4360-bd09-7467304e6e49/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			}
 		],
 		"popularity": "33",
@@ -402,24 +425,24 @@
 		"type": "new",
 		"year": "2021",
 		"duration": "1ч 52м",
-		"age": "6+",
+		"age": "6",
 		"rating": "5.5",
 		"genres": ["Семейный", "Комедия", "Фантастика"],
-		"members:": [
+		"members": [
 			{
 				"name": "Дон Холл",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/7f9b760b-18ce-4da7-b20e-256bd7dd5d2b/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Пол Бриггс",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/21495e97-106f-4040-9af1-02d4ff00be2e/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			},
 			{
 				"name": "Джаред Буш",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/aef66a02-3ec1-4668-84dc-5039ad5359d2/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			}
 		],
 		"popularity": "75",
@@ -435,14 +458,14 @@
 		"type": "recommend",
 		"year": "2018",
 		"duration": "7м",
-		"age": "6+",
+		"age": "6",
 		"rating": "2.4",
 		"genres": ["Семейный", "Комедия", "Мультфильм"],
-		"members:": [
+		"members": [
 			{
 				"name": "Брэд Бёрд",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/378584d7-f1f9-49b0-8d93-30b77982cad0/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			}
 		],
 		"popularity": "45",
@@ -458,29 +481,29 @@
 		"type": "trending",
 		"year": "2013 - 2013",
 		"duration": "5м",
-		"age": "12+",
+		"age": "12",
 		"rating": "7.0",
 		"genres": ["Детский", "Мультфильм"],
-		"members:": [
+		"members": [
 			{
 				"name": "Билл Фармер",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/f86f950e-a941-4d22-a36c-d0f6016ff18c/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Холли Хантер",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/76373ae1-429f-4c5f-adf9-03319093c601/112x168",
-				"role:": "Actress"
+				"role": "Actress"
 			},
 			{
 				"name": "Стивен Тоболовски",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/739cb206-f8f2-414f-ba68-3d362fc67d39/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Пол Рудиш",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/b3054daf-f6cd-4eb5-9a89-7416d27bcce8/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			}
 		],
 		"popularity": "100",
@@ -496,29 +519,29 @@
 		"type": "new",
 		"year": "2021",
 		"duration": "50м",
-		"age": "16+",
+		"age": "16",
 		"rating": "8.8",
 		"genres": ["Научная-фантастика", "Приключения", "Экшн"],
-		"members:": [
+		"members": [
 			{
 				"name": "Билл Фармер",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/f86f950e-a941-4d22-a36c-d0f6016ff18c/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Холли Хантер",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/76373ae1-429f-4c5f-adf9-03319093c601/112x168",
-				"role:": "Actress"
+				"role": "Actress"
 			},
 			{
 				"name": "Стивен Тоболовски",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/739cb206-f8f2-414f-ba68-3d362fc67d39/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Пол Рудиш",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/b3054daf-f6cd-4eb5-9a89-7416d27bcce8/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			}
 		],
 		"popularity": "35",
@@ -534,29 +557,29 @@
 		"type": "new",
 		"year": "2019",
 		"duration": "53м",
-		"age": "14+",
+		"age": "14",
 		"rating": "4.8",
 		"genres": ["Биографический", "Документальный", "Музыкальный"],
-		"members:": [
+		"members": [
 			{
 				"name": "Билл Фармер",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/f86f950e-a941-4d22-a36c-d0f6016ff18c/112x168",
-				"role:": "Acter"
+				"role": "Acter"
 			},
 			{
 				"name": "Холли Хантер",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/76373ae1-429f-4c5f-adf9-03319093c601/112x168",
-				"role:": "Actress"
+				"role": "Actress"
 			},
 			{
 				"name": "Стивен Тоболовски",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/739cb206-f8f2-414f-ba68-3d362fc67d39/112x168",
-				"role:": "Filmmaker"
+				"role": "Filmmaker"
 			},
 			{
 				"name": "Пол Рудиш",
 				"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/b3054daf-f6cd-4eb5-9a89-7416d27bcce8/112x168",
-				"role:": "Producer"
+				"role": "Producer"
 			}
 		],
 		"popularity": "55",
