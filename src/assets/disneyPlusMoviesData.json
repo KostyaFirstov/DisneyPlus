@@ -48,7 +48,8 @@
 				"rating": "9.6",
 				"likes": "1"
 			}
-		]
+		],
+		"category": "2"
 	},
 	{
 		"id": "2",
@@ -91,7 +92,8 @@
 			}
 		],
 		"popularity": "92",
-		"comments": []
+		"comments": [],
+		"category": "1"
 	},
 	{
 		"id": "3",
@@ -129,7 +131,8 @@
 			}
 		],
 		"popularity": "56",
-		"comments": []
+		"comments": [],
+		"category": "2"
 	},
 	{
 		"id": "4",
@@ -167,7 +170,8 @@
 				"role": "Acter"
 			}
 		],
-		"comments": []
+		"comments": [],
+		"category": "4"
 	},
 	{
 		"id": "5",
@@ -205,7 +209,8 @@
 			}
 		],
 		"popularity": "67",
-		"comments": []
+		"comments": [],
+		"category": "1"
 	},
 	{
 		"id": "6",
@@ -243,7 +248,8 @@
 			}
 		],
 		"popularity": "93",
-		"comments": []
+		"comments": [],
+		"category": "4"
 	},
 	{
 		"id": "7",
@@ -286,7 +292,8 @@
 			}
 		],
 		"popularity": "98",
-		"comments": []
+		"comments": [],
+		"category": "4"
 	},
 	{
 		"id": "8",
@@ -324,7 +331,8 @@
 			}
 		],
 		"popularity": "78",
-		"comments": []
+		"comments": [],
+		"category": "6"
 	},
 	{
 		"id": "9",
@@ -352,7 +360,8 @@
 			}
 		],
 		"popularity": "15",
-		"comments": []
+		"comments": [],
+		"category": "2"
 	},
 	{
 		"id": "10",
@@ -385,7 +394,8 @@
 			}
 		],
 		"popularity": "24",
-		"comments": []
+		"comments": [],
+		"category": "1"
 	},
 	{
 		"id": "11",
@@ -413,7 +423,8 @@
 			}
 		],
 		"popularity": "33",
-		"comments": []
+		"comments": [],
+		"category": "4"
 	},
 	{
 		"id": "12",
@@ -446,7 +457,8 @@
 			}
 		],
 		"popularity": "75",
-		"comments": []
+		"comments": [],
+		"category": "5"
 	},
 	{
 		"id": "13",
@@ -469,7 +481,8 @@
 			}
 		],
 		"popularity": "45",
-		"comments": []
+		"comments": [],
+		"category": "2"
 	},
 	{
 		"id": "14",
@@ -483,7 +496,7 @@
 		"duration": "5м",
 		"age": "12",
 		"rating": "7.0",
-		"genres": ["Детский", "Мультфильм"],
+		"genres": ["Семейный", "Детский", "Мультфильм"],
 		"members": [
 			{
 				"name": "Билл Фармер",
@@ -507,7 +520,8 @@
 			}
 		],
 		"popularity": "100",
-		"comments": []
+		"comments": [],
+		"category": "2"
 	},
 	{
 		"id": "15",
@@ -545,7 +559,8 @@
 			}
 		],
 		"popularity": "35",
-		"comments": []
+		"comments": [],
+		"category": "3"
 	},
 	{
 		"id": "16",
@@ -583,6 +598,7 @@
 			}
 		],
 		"popularity": "55",
-		"comments": []
+		"comments": [],
+		"category": "6"
 	}
 ]

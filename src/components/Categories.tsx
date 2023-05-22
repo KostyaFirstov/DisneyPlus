@@ -2,10 +2,10 @@ import React from 'react'
 
 type CategoriesProps = {
 	value: number
-	onChangeCategory: (i: number) => void
+	changeCategory: (i: number) => void
 }
 
-const Categories: React.FC<CategoriesProps> = ({ value, onChangeCategory }) => {
+const Categories: React.FC<CategoriesProps> = ({ value, changeCategory }) => {
 	const categoriesList = [
 		'Все',
 		'Комедии',
@@ -23,7 +23,7 @@ const Categories: React.FC<CategoriesProps> = ({ value, onChangeCategory }) => {
 					return (
 						<li
 							key={i}
-							onClick={() => onChangeCategory(i)}
+							onClick={() => changeCategory(i)}
 							className={`${value === i ? 'active' : ''} categories__item`}
 						>
 							{item}

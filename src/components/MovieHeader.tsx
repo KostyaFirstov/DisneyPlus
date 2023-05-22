@@ -45,7 +45,7 @@ const MovieHeader: React.FC<MovieHeaderProps> = ({
 						<img src={titleImg} alt={title} />
 					</div>
 					<div className='movie__parameters'>
-						<div className='movie__parameter'>{age}</div>
+						<div className='movie__parameter'>{age}+</div>
 						<div className='movie__parameter'>{year}</div>
 						<div className='movie__parameter'>{duration}</div>
 						<div className='movie__parameter movie__parameter-rating'>

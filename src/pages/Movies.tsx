@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import MoviesSkeleton from '../components/MoviesSkeleton'
 import Sort, { sortList } from '../components/Sort'
 import Categories from '../components/Categories'
+import Pagination from '../components/Pagination'
 
 export interface IMovie {
 	id: number
@@ -34,21 +35,20 @@ const Movies = () => {
 	const [isLoading, setIsLoading] = React.useState(true)
 	const [sortValue, setSortValue] = React.useState(sortList[0])
 	const [categorieActive, setCategorieActive] = React.useState(0)
+	const [currentPage, setCurrentPage] = React.useState(1)
 
 	React.useEffect(() => {
 		const fetchMovies = async () => {
+			setIsLoading(true)
 			const sortBy = sortValue.sortValue.startsWith('-')
 				? sortValue.sortValue.substring(1)
 				: sortValue.sortValue
-
 			const order = sortValue.sortValue.startsWith('-') ? 'asc' : 'desc'
-
 			const category = categorieActive ? `category=${categorieActive}` : ''
 
-			console.log(categorieActive)
 			try {
 				const { data } = await axios.get<IMovie[]>(
-					`https://64672b8aba7110b663b11c76.mockapi.io/Movies?${category}&sortBy=${sortBy}&order=${order}`
+					`https://64672b8aba7110b663b11c76.mockapi.io/Movies?page=${currentPage}&limit=8&${category}&sortBy=${sortBy}&order=${order}`
 				)
 
 				setItems(data)
@@ -59,14 +59,18 @@ const Movies = () => {
 		}
 
 		fetchMovies()
-	}, [sortValue, categorieActive])
+	}, [sortValue, categorieActive, currentPage])
 
-	const onChangeCategory = (i: number) => {
+	const changeCategory = (i: number) => {
 		setCategorieActive(i)
 	}
 
 	const changeSortValue = (item: number) => {
 		setSortValue(sortList[item])
+	}
+
+	const changePage = (i: number) => {
+		setCurrentPage(i)
 	}
 
 	return (
@@ -78,13 +82,13 @@ const Movies = () => {
 				<div className='all-movies__filters'>
 					<Categories
 						value={categorieActive}
-						onChangeCategory={i => onChangeCategory(i)}
+						changeCategory={i => changeCategory(i)}
 					/>
 					<Sort value={sortValue} changeSortValue={i => changeSortValue(i)} />
 				</div>
 				<div className='all-movies__container'>
 					{isLoading === true
-						? [...new Array(12)].map((item, index) => {
+						? [...new Array(8)].map((item, index) => {
 								return <MoviesSkeleton key={index} />
 						  })
 						: items.map(item => {
@@ -99,6 +103,7 @@ const Movies = () => {
 								)
 						  })}
 				</div>
+				<Pagination changePage={i => changePage(i)} />
 			</div>
 		</section>
 	)
