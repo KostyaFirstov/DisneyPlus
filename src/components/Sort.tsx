@@ -1,5 +1,7 @@
 import { type } from 'os'
 import React from 'react'
+import { selectSort, setSortValue } from '../redux/filterSlice'
+import { useDispatch, useSelector } from 'react-redux'
 
 export const sortList = [
 	{ name: 'Популярности DESC', sortValue: 'popularity' },
@@ -12,16 +14,18 @@ export const sortList = [
 	{ name: 'Возрасту ASC', sortValue: '-age' }
 ]
 
-type SortProps = {
-	value: { name: string; sortValue: string }
-	changeSortValue: (i: number) => void
-}
-
-const Sort: React.FC<SortProps> = ({ value, changeSortValue }) => {
+const Sort: React.FC = () => {
 	const [open, setOpen] = React.useState(false)
+	const { sortValue, name } = useSelector(selectSort)
+	const dispatch = useDispatch()
 
 	const changeModal = () => {
 		setOpen(prev => !prev)
+	}
+
+	const changeSortValue = (item: number) => {
+		dispatch(setSortValue(sortList[item]))
+		setOpen(false)
 	}
 
 	return (
@@ -43,7 +47,7 @@ const Sort: React.FC<SortProps> = ({ value, changeSortValue }) => {
 			</div>
 			<div className='sort__list'>
 				<span onClick={changeModal} className='sort__item-active'>
-					{value.name}
+					{name}
 				</span>
 				{open && (
 					<ul className='sort__modal'>
@@ -52,9 +56,7 @@ const Sort: React.FC<SortProps> = ({ value, changeSortValue }) => {
 								<li
 									onClick={() => changeSortValue(index)}
 									key={index}
-									className={`${
-										value.name === item.name ? 'active' : ''
-									} sort__item`}
+									className={`${name === item.name ? 'active' : ''} sort__item`}
 								>
 									{item.name}
 								</li>

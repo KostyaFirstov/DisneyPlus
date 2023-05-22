@@ -2,9 +2,22 @@ import axios from 'axios'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import MoviesSkeleton from '../components/MoviesSkeleton'
-import Sort, { sortList } from '../components/Sort'
+import Sort from '../components/Sort'
 import Categories from '../components/Categories'
 import Pagination from '../components/Pagination'
+import { useSelector } from 'react-redux'
+import {
+	selectSort,
+	selectCategory,
+	selectSearch,
+	selectPage
+} from '../redux/filterSlice'
+import {
+	fetchMoviesData,
+	selectMovies,
+	selectStatus
+} from '../redux/moviesSlice'
+import { useAppDispatch } from '../redux/store'
 
 export interface IMovie {
 	id: number
@@ -31,47 +44,28 @@ export interface IMovie {
 }
 
 const Movies = () => {
-	const [items, setItems] = React.useState<IMovie[]>([])
-	const [isLoading, setIsLoading] = React.useState(true)
-	const [sortValue, setSortValue] = React.useState(sortList[0])
-	const [categorieActive, setCategorieActive] = React.useState(0)
-	const [currentPage, setCurrentPage] = React.useState(1)
+	const { sortValue } = useSelector(selectSort)
+	const loading = useSelector(selectStatus)
+	const categoryValue = useSelector(selectCategory)
+	const searchValue = useSelector(selectSearch)
+	const currentPage = useSelector(selectPage)
+	const items = useSelector(selectMovies)
+	const dispatch = useAppDispatch()
+
+	const fetchMovies = async () => {
+		const sortBy = sortValue.startsWith('-')
+			? sortValue.substring(1)
+			: sortValue
+		const order = sortValue.startsWith('-') ? 'asc' : 'desc'
+		const category = categoryValue ? `category=${categoryValue}` : ''
+		const search = searchValue ? `&search=${searchValue}` : ''
+
+		dispatch(fetchMoviesData({ sortBy, order, category, search, currentPage }))
+	}
 
 	React.useEffect(() => {
-		const fetchMovies = async () => {
-			setIsLoading(true)
-			const sortBy = sortValue.sortValue.startsWith('-')
-				? sortValue.sortValue.substring(1)
-				: sortValue.sortValue
-			const order = sortValue.sortValue.startsWith('-') ? 'asc' : 'desc'
-			const category = categorieActive ? `category=${categorieActive}` : ''
-
-			try {
-				const { data } = await axios.get<IMovie[]>(
-					`https://64672b8aba7110b663b11c76.mockapi.io/Movies?page=${currentPage}&limit=8&${category}&sortBy=${sortBy}&order=${order}`
-				)
-
-				setItems(data)
-				setIsLoading(false)
-			} catch (error) {
-				console.log(error)
-			}
-		}
-
 		fetchMovies()
-	}, [sortValue, categorieActive, currentPage])
-
-	const changeCategory = (i: number) => {
-		setCategorieActive(i)
-	}
-
-	const changeSortValue = (item: number) => {
-		setSortValue(sortList[item])
-	}
-
-	const changePage = (i: number) => {
-		setCurrentPage(i)
-	}
+	}, [sortValue, categoryValue, currentPage, searchValue])
 
 	return (
 		<section className='all-movies'>
@@ -79,15 +73,19 @@ const Movies = () => {
 				<div className='all-movies__title title'>
 					<h1>Фильмы</h1>
 				</div>
+				{searchValue && (
+					<div className='all-movies__search'>
+						<h2>
+							Результаты по вашему запросу: <span>“{searchValue}”</span>
+						</h2>
+					</div>
+				)}
 				<div className='all-movies__filters'>
-					<Categories
-						value={categorieActive}
-						changeCategory={i => changeCategory(i)}
-					/>
-					<Sort value={sortValue} changeSortValue={i => changeSortValue(i)} />
+					<Categories />
+					<Sort />
 				</div>
 				<div className='all-movies__container'>
-					{isLoading === true
+					{loading === 'loading'
 						? [...new Array(8)].map((item, index) => {
 								return <MoviesSkeleton key={index} />
 						  })
@@ -103,7 +101,7 @@ const Movies = () => {
 								)
 						  })}
 				</div>
-				<Pagination changePage={i => changePage(i)} />
+				<Pagination />
 			</div>
 		</section>
 	)

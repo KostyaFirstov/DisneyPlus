@@ -1,11 +1,8 @@
 import React from 'react'
+import { selectCategory, setCategoryValue } from '../redux/filterSlice'
+import { useDispatch, useSelector } from 'react-redux'
 
-type CategoriesProps = {
-	value: number
-	changeCategory: (i: number) => void
-}
-
-const Categories: React.FC<CategoriesProps> = ({ value, changeCategory }) => {
+const Categories: React.FC = () => {
 	const categoriesList = [
 		'Все',
 		'Комедии',
@@ -15,6 +12,12 @@ const Categories: React.FC<CategoriesProps> = ({ value, changeCategory }) => {
 		'Фантастика',
 		'Документальные'
 	]
+	const categoryValue = useSelector(selectCategory)
+	const dispatch = useDispatch()
+
+	const changeCategory = (i: number) => {
+		dispatch(setCategoryValue(i))
+	}
 
 	return (
 		<div className='categories'>
@@ -24,7 +27,9 @@ const Categories: React.FC<CategoriesProps> = ({ value, changeCategory }) => {
 						<li
 							key={i}
 							onClick={() => changeCategory(i)}
-							className={`${value === i ? 'active' : ''} categories__item`}
+							className={`${
+								categoryValue === i ? 'active' : ''
+							} categories__item`}
 						>
 							{item}
 						</li>

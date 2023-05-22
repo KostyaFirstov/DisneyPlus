@@ -165,7 +165,7 @@ body {
 	margin-left: 6px;
 }
 
-.option-search {
+.full-search {
 	position: relative;
 }
 
@@ -595,6 +595,14 @@ body {
 
 .all-movies {
 	padding: 65px 0;
+}
+
+.all-movies__search {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.all-movies__search span {
+	color: #fff;
 }
 
 .all-movies__title {
