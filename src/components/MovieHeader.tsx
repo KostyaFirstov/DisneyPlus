@@ -30,6 +30,7 @@ export type MovieHeaderProps = {
 		likes: string
 	}[]
 	onOpenModal: () => any
+	modalOpenRef?: React.RefObject<HTMLDivElement>
 }
 
 const MovieHeader: React.FC<MovieHeaderProps> = ({
@@ -44,6 +45,7 @@ const MovieHeader: React.FC<MovieHeaderProps> = ({
 	rating,
 	genres,
 	cardImg,
+	modalOpenRef,
 	onOpenModal
 }) => {
 	const dispatch = useDispatch()
@@ -86,6 +88,7 @@ const MovieHeader: React.FC<MovieHeaderProps> = ({
 							<button className='content__btn-unfill'>Смотреть трейлер</button>
 						</div>
 						<div
+							ref={modalOpenRef}
 							onClick={onOpenModal}
 							className='movie__option movie__option-creaters'
 						>
@@ -138,7 +141,7 @@ const MovieHeader: React.FC<MovieHeaderProps> = ({
 											height='47'
 											rx='23.5'
 											fill='black'
-											fill-opacity='0.1'
+											fillOpacity='0.1'
 										/>
 										<path
 											d='M20.9999 28.1996L16.7999 23.9996L15.3999 25.3996L20.9999 30.9996L32.9999 18.9996L31.5999 17.5996L20.9999 28.1996Z'

@@ -3,12 +3,14 @@ import filter from './filterSlice'
 import { useDispatch } from 'react-redux'
 import movies from './moviesSlice'
 import favorites from './favoritesSlice'
+import menu from './menuSlice'
 
 const store = configureStore({
 	reducer: {
 		filter,
 		movies,
-		favorites
+		favorites,
+		menu
 	}
 })
 

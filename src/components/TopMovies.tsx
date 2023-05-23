@@ -30,6 +30,20 @@ const Top = () => {
 						spaceBetween={15}
 						slidesPerView={1.3}
 						pagination={{ clickable: true }}
+						breakpoints={{
+							300: {
+								slidesPerView: 1.05,
+								spaceBetween: 5
+							},
+							400: {
+								slidesPerView: 1.15,
+								spaceBetween: 5
+							},
+							1100: {
+								slidesPerView: 1.3,
+								spaceBetween: 15
+							}
+						}}
 					>
 						<SwiperSlide className='top-movies-slide swiper-slide'>
 							<img src='./images/card/movie/image-3.jpg' alt='' />

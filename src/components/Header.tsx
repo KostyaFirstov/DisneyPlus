@@ -1,8 +1,10 @@
 import React, { ChangeEvent } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Search from './Search'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { selectFavorites } from '../redux/favoritesSlice'
+import Menu from './Menu'
+import { selectMenuStatus, setMenuStatus } from '../redux/menuSlice'
 
 export const headerLinks = [
 	{
@@ -64,86 +66,98 @@ export const headerLinks = [
 const Header: React.FC = () => {
 	const location = useLocation()
 	const favorites = useSelector(selectFavorites)
+	const status = useSelector(selectMenuStatus)
 	const isMounted = React.useRef(false)
+
+	const dispatch = useDispatch()
 
 	React.useEffect(() => {
 		if (isMounted.current) {
 			const json = JSON.stringify(favorites)
 			localStorage.setItem('movies', json)
-			console.log('work!')
 		}
 
 		isMounted.current = true
 	}, [favorites])
 
+	const openMenu = () => {
+		dispatch(setMenuStatus(true))
+	}
+
 	return (
-		<div className='header'>
-			<div className='header__container container'>
-				<div className='header__main'>
-					<div className='logo'>
-						<Link to={'/'}>
-							<img src='/images/logo.svg' alt='DisneyPlus+' />
-						</Link>
+		<>
+			<div className='header'>
+				<div className='header__container container'>
+					<div className='header__main'>
+						<div className='logo'>
+							<Link to={'/'}>
+								<img src='/images/logo.svg' alt='DisneyPlus+' />
+							</Link>
+						</div>
+						<ul className='header__links'>
+							{headerLinks.map((item, index) => {
+								return (
+									<li
+										key={index}
+										className={`header__link ${
+											item.link === location.pathname ? 'active' : ''
+										}`}
+									>
+										<Link to={item.link}>
+											{item.image}
+											<span>{item.text}</span>
+										</Link>
+									</li>
+								)
+							})}
+						</ul>
 					</div>
-					<ul className='header__links'>
-						{headerLinks.map((item, index) => {
-							return (
-								<li
-									key={index}
-									className={`header__link ${
-										item.link === location.pathname ? 'active' : ''
-									}`}
+					<ul className='header__options'>
+						{location.pathname === '/movies' && <Search />}
+						<li className='header__option header__option-favorites'>
+							<Link to='/favorites'>
+								<svg
+									width='24'
+									height='24'
+									viewBox='0 0 24 24'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'
 								>
-									<Link to={item.link}>
-										{item.image}
-										<span>{item.text}</span>
-									</Link>
-								</li>
-							)
-						})}
-					</ul>
-				</div>
-				<ul className='header__options'>
-					{location.pathname === '/movies' && <Search />}
-					<li className='header__option header__option-favorites'>
-						<Link to='/favorites'>
+									<path
+										d='M4.8 7.2C4.36 7.2 4 7.56 4 8V18.4C4 19.28 4.72 20 5.6 20H16C16.44 20 16.8 19.64 16.8 19.2C16.8 18.76 16.44 18.4 16 18.4H6.4C5.96 18.4 5.6 18.04 5.6 17.6V8C5.6 7.56 5.24 7.2 4.8 7.2ZM18.4 4H8.8C7.92 4 7.2 4.72 7.2 5.6V15.2C7.2 16.08 7.92 16.8 8.8 16.8H18.4C19.28 16.8 20 16.08 20 15.2V5.6C20 4.72 19.28 4 18.4 4ZM12 14V6.8L16.376 10.08C16.592 10.24 16.592 10.56 16.376 10.72L12 14Z'
+										fill='white'
+									/>
+								</svg>
+								<span>Мой топ </span>
+								<div className='favorites__count'>{favorites.length}</div>
+							</Link>
+						</li>
+						<li
+							onClick={openMenu}
+							className='header__option header__option-menu'
+						>
 							<svg
-								width='24'
-								height='24'
-								viewBox='0 0 24 24'
+								width='18'
+								height='18'
+								viewBox='0 0 18 18'
 								fill='none'
 								xmlns='http://www.w3.org/2000/svg'
 							>
 								<path
-									d='M4.8 7.2C4.36 7.2 4 7.56 4 8V18.4C4 19.28 4.72 20 5.6 20H16C16.44 20 16.8 19.64 16.8 19.2C16.8 18.76 16.44 18.4 16 18.4H6.4C5.96 18.4 5.6 18.04 5.6 17.6V8C5.6 7.56 5.24 7.2 4.8 7.2ZM18.4 4H8.8C7.92 4 7.2 4.72 7.2 5.6V15.2C7.2 16.08 7.92 16.8 8.8 16.8H18.4C19.28 16.8 20 16.08 20 15.2V5.6C20 4.72 19.28 4 18.4 4ZM12 14V6.8L16.376 10.08C16.592 10.24 16.592 10.56 16.376 10.72L12 14Z'
+									d='M15.5667 7.06667H10.9333V2.43333C10.9333 1.92058 10.7296 1.42883 10.3671 1.06626C10.0045 0.70369 9.51275 0.5 9 0.5C8.48725 0.5 7.9955 0.70369 7.63293 1.06626C7.27036 1.42883 7.06667 1.92058 7.06667 2.43333V7.06667H2.43333C1.92058 7.06667 1.42883 7.27036 1.06626 7.63293C0.70369 7.9955 0.5 8.48725 0.5 9C0.5 9.51275 0.70369 10.0045 1.06626 10.3671C1.42883 10.7296 1.92058 10.9333 2.43333 10.9333H7.06667V15.5667C7.06667 16.0794 7.27036 16.5712 7.63293 16.9337C7.9955 17.2963 8.48725 17.5 9 17.5C9.51275 17.5 10.0045 17.2963 10.3671 16.9337C10.7296 16.5712 10.9333 16.0794 10.9333 15.5667V10.9333H15.5667C16.0794 10.9333 16.5712 10.7296 16.9337 10.3671C17.2963 10.0045 17.5 9.51275 17.5 9C17.5 8.48725 17.2963 7.9955 16.9337 7.63293C16.5712 7.27036 16.0794 7.06667 15.5667 7.06667V7.06667Z'
 									fill='white'
 								/>
 							</svg>
-							<span>Мой топ </span>
-							<div className='favorites__count'>{favorites.length}</div>
-						</Link>
-					</li>
-					<li className='header__option header__option-menu'>
-						<svg
-							width='18'
-							height='18'
-							viewBox='0 0 18 18'
-							fill='none'
-							xmlns='http://www.w3.org/2000/svg'
-						>
-							<path
-								d='M15.5667 7.06667H10.9333V2.43333C10.9333 1.92058 10.7296 1.42883 10.3671 1.06626C10.0045 0.70369 9.51275 0.5 9 0.5C8.48725 0.5 7.9955 0.70369 7.63293 1.06626C7.27036 1.42883 7.06667 1.92058 7.06667 2.43333V7.06667H2.43333C1.92058 7.06667 1.42883 7.27036 1.06626 7.63293C0.70369 7.9955 0.5 8.48725 0.5 9C0.5 9.51275 0.70369 10.0045 1.06626 10.3671C1.42883 10.7296 1.92058 10.9333 2.43333 10.9333H7.06667V15.5667C7.06667 16.0794 7.27036 16.5712 7.63293 16.9337C7.9955 17.2963 8.48725 17.5 9 17.5C9.51275 17.5 10.0045 17.2963 10.3671 16.9337C10.7296 16.5712 10.9333 16.0794 10.9333 15.5667V10.9333H15.5667C16.0794 10.9333 16.5712 10.7296 16.9337 10.3671C17.2963 10.0045 17.5 9.51275 17.5 9C17.5 8.48725 17.2963 7.9955 16.9337 7.63293C16.5712 7.27036 16.0794 7.06667 15.5667 7.06667V7.06667Z'
-								fill='white'
-							/>
-						</svg>
-						<span>Меню</span>
-					</li>
-					<li className='header__option header__option-account'>
-						<img src='/images/acc.svg' alt='Account' />
-					</li>
-				</ul>
+							<span>Меню</span>
+						</li>
+						<li className='header__option header__option-account'>
+							<img src='/images/acc.svg' alt='Account' />
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
+			{status && <Menu />}
+		</>
 	)
 }
 

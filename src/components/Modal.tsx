@@ -4,17 +4,18 @@ type ModalProps = {
 	title: string
 	children: React.ReactNode
 	onCloseModal: () => any
+	modalRef: React.RefObject<HTMLDivElement>
 }
 
 const Modal: React.FC<ModalProps> = ({
 	title,
 	children,
-
+	modalRef,
 	onCloseModal
 }) => {
 	return (
 		<div className='modal__window'>
-			<div className='modal__container'>
+			<div ref={modalRef} className='modal__container'>
 				<div className='modal__title'>
 					<h2>{title}</h2>
 				</div>

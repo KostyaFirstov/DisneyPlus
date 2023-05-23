@@ -32,18 +32,24 @@ enum Status {
 
 interface IMovieState {
 	items: IMovie[]
+	similar: IMovie[]
 	status: Status
 }
 
 const initialState: IMovieState = {
 	items: [],
+	similar: [],
 	status: Status.LOADING
 }
 
 export const movieSlice = createSlice({
 	name: 'movies',
 	initialState,
-	reducers: {},
+	reducers: {
+		filterOnSimilar: (state, action: PayloadAction<number>) => {
+			state.similar = state.items.filter(item => item.id !== action.payload)
+		}
+	},
 	extraReducers: builder => {
 		builder.addCase(fetchMoviesData.pending, state => {
 			state.items = []
@@ -62,6 +68,7 @@ export const movieSlice = createSlice({
 
 export const selectStatus = (state: RootState) => state.movies.status
 export const selectMovies = (state: RootState) => state.movies.items
+export const selectSimilars = (state: RootState) => state.movies.similar
 
-export const {} = movieSlice.actions
+export const { filterOnSimilar } = movieSlice.actions
 export default movieSlice.reducer

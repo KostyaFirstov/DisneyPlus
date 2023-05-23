@@ -32,6 +32,28 @@ const Slider: React.FC<SliderProps> = ({ name }) => {
 					spaceBetween={15}
 					slidesPerView={4.5}
 					pagination={{ clickable: true }}
+					breakpoints={{
+						300: {
+							slidesPerView: 1.6,
+							spaceBetween: 5
+						},
+						400: {
+							slidesPerView: 2.2,
+							spaceBetween: 5
+						},
+						567: {
+							slidesPerView: 2.5,
+							spaceBetween: 10
+						},
+						767: {
+							slidesPerView: 3.5,
+							spaceBetween: 10
+						},
+						1100: {
+							slidesPerView: 4.5,
+							spaceBetween: 15
+						}
+					}}
 				>
 					<SwiperSlide className='usual-movies-slide swiper-slide'>
 						<img src='./images/card/usual/movie-card01.jpg' alt='' />

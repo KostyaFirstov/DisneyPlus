@@ -12,6 +12,31 @@ const FullMovie = () => {
 	const [membersModal, setMembersModal] = React.useState(false)
 	const [commentModal, setCommentModal] = React.useState(false)
 	const params = useParams()
+	const modalRef = React.useRef<HTMLDivElement>(null)
+	const modalActersOpenRef = React.useRef<HTMLDivElement>(null)
+	const modalCommentsOpenRef = React.useRef<HTMLDivElement>(null)
+
+	React.useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			const _event = event.composedPath()
+
+			if (
+				modalActersOpenRef.current &&
+				_event.includes(modalActersOpenRef.current)
+			) {
+			} else if (
+				modalCommentsOpenRef.current &&
+				_event.includes(modalCommentsOpenRef.current)
+			) {
+			} else if (modalRef.current && !_event.includes(modalRef.current)) {
+				setMembersModal(false)
+				setCommentModal(false)
+			}
+		}
+
+		document.body.addEventListener('click', handleClickOutside)
+		return () => document.body.removeEventListener('click', handleClickOutside)
+	}, [])
 
 	React.useEffect(() => {
 		const getMovie = async () => {
@@ -46,7 +71,11 @@ const FullMovie = () => {
 		return (
 			<>
 				{membersModal && (
-					<Modal onCloseModal={onCloseModal} title='Участники:'>
+					<Modal
+						modalRef={modalRef}
+						onCloseModal={onCloseModal}
+						title='Участники:'
+					>
 						{movie.members.map((item, index) => {
 							return (
 								<div className='acters__item' key={index}>
@@ -64,9 +93,14 @@ const FullMovie = () => {
 						})}
 					</Modal>
 				)}
-				<MovieHeader onOpenModal={onChangeMembersModal} {...movie} />
+				<MovieHeader
+					modalOpenRef={modalActersOpenRef}
+					onOpenModal={onChangeMembersModal}
+					{...movie}
+				/>
 				{commentModal && (
 					<Modal
+						modalRef={modalRef}
 						onCloseModal={onCloseModal}
 						title='Поделитесь своим впечатлением!'
 					>
@@ -82,8 +116,12 @@ const FullMovie = () => {
 						</form>
 					</Modal>
 				)}
-				<Comments onOpenModal={openCommentModal} {...movie} />
-				<Similiar />
+				<Comments
+					modalOpenRef={modalCommentsOpenRef}
+					onOpenModal={openCommentModal}
+					{...movie}
+				/>
+				<Similiar id={movie.id} />
 			</>
 		)
 	}

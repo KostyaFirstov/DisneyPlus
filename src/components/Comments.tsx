@@ -5,7 +5,7 @@ import { MovieHeaderProps } from './MovieHeader'
 
 const Comments: React.FC<MovieHeaderProps> = ({
 	comments,
-
+	modalOpenRef,
 	onOpenModal
 }) => {
 	return (
@@ -22,7 +22,10 @@ const Comments: React.FC<MovieHeaderProps> = ({
 				freeMode={true}
 			>
 				<SwiperSlide onClick={onOpenModal}>
-					<div className='commentaries-slide swiper-slide commentaries__item commentaries__item-add'>
+					<div
+						ref={modalOpenRef}
+						className='commentaries-slide swiper-slide commentaries__item commentaries__item-add'
+					>
 						<div className='commentaries__item-add-inner'>
 							<h3>Есть что рассказать?</h3>
 							<p>Пишите, нам интересно узнать ваше мнение</p>
