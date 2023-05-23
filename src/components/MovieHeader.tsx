@@ -1,4 +1,11 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import {
+	isFavoriteItem,
+	removeFavorites,
+	selectIsFavorite,
+	setFavorites
+} from '../redux/favoritesSlice'
 
 export type MovieHeaderProps = {
 	id: number
@@ -26,6 +33,7 @@ export type MovieHeaderProps = {
 }
 
 const MovieHeader: React.FC<MovieHeaderProps> = ({
+	id,
 	backgroundImg,
 	description,
 	duration,
@@ -35,8 +43,26 @@ const MovieHeader: React.FC<MovieHeaderProps> = ({
 	age,
 	rating,
 	genres,
+	cardImg,
 	onOpenModal
 }) => {
+	const dispatch = useDispatch()
+	const isFavorite = useSelector(selectIsFavorite)
+
+	React.useEffect(() => {
+		dispatch(isFavoriteItem(id))
+	}, [])
+
+	const onAddFavorites = () => {
+		if (!isFavorite) {
+			dispatch(setFavorites({ id, title, cardImg }))
+		} else {
+			dispatch(removeFavorites(id))
+		}
+
+		dispatch(isFavoriteItem(id))
+	}
+
 	return (
 		<article className='movie'>
 			<div className='movie__container container'>
@@ -96,36 +122,68 @@ const MovieHeader: React.FC<MovieHeaderProps> = ({
 							</button>
 						</div>
 						<div className='movie__option movie__option-favorite'>
-							<button>
-								<svg
-									width='48'
-									height='48'
-									viewBox='0 0 48 48'
-									fill='none'
-									xmlns='http://www.w3.org/2000/svg'
-								>
-									<rect
-										x='0.5'
-										y='0.5'
-										width='47'
-										height='47'
-										rx='23.5'
-										fill='black'
-										fillOpacity='0.1'
-									/>
-									<path
-										d='M30 25H25V30C25 30.55 24.55 31 24 31C23.45 31 23 30.55 23 30V25H18C17.45 25 17 24.55 17 24C17 23.45 17.45 23 18 23H23V18C23 17.45 23.45 17 24 17C24.55 17 25 17.45 25 18V23H30C30.55 23 31 23.45 31 24C31 24.55 30.55 25 30 25Z'
-										fill='white'
-									/>
-									<rect
-										x='0.5'
-										y='0.5'
-										width='47'
-										height='47'
-										rx='23.5'
-										stroke='white'
-									/>
-								</svg>
+							<button onClick={onAddFavorites}>
+								{isFavorite ? (
+									<svg
+										width='48'
+										height='48'
+										viewBox='0 0 48 48'
+										fill='none'
+										xmlns='http://www.w3.org/2000/svg'
+									>
+										<rect
+											x='0.5'
+											y='0.5'
+											width='47'
+											height='47'
+											rx='23.5'
+											fill='black'
+											fill-opacity='0.1'
+										/>
+										<path
+											d='M20.9999 28.1996L16.7999 23.9996L15.3999 25.3996L20.9999 30.9996L32.9999 18.9996L31.5999 17.5996L20.9999 28.1996Z'
+											fill='#02E7F5'
+										/>
+										<rect
+											x='0.5'
+											y='0.5'
+											width='47'
+											height='47'
+											rx='23.5'
+											stroke='#11FFFF'
+										/>
+									</svg>
+								) : (
+									<svg
+										width='48'
+										height='48'
+										viewBox='0 0 48 48'
+										fill='none'
+										xmlns='http://www.w3.org/2000/svg'
+									>
+										<rect
+											x='0.5'
+											y='0.5'
+											width='47'
+											height='47'
+											rx='23.5'
+											fill='black'
+											fillOpacity='0.1'
+										/>
+										<path
+											d='M30 25H25V30C25 30.55 24.55 31 24 31C23.45 31 23 30.55 23 30V25H18C17.45 25 17 24.55 17 24C17 23.45 17.45 23 18 23H23V18C23 17.45 23.45 17 24 17C24.55 17 25 17.45 25 18V23H30C30.55 23 31 23.45 31 24C31 24.55 30.55 25 30 25Z'
+											fill='white'
+										/>
+										<rect
+											x='0.5'
+											y='0.5'
+											width='47'
+											height='47'
+											rx='23.5'
+											stroke='white'
+										/>
+									</svg>
+								)}
 							</button>
 						</div>
 					</div>

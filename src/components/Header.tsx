@@ -1,6 +1,8 @@
 import React, { ChangeEvent } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Search from './Search'
+import { useSelector } from 'react-redux'
+import { selectFavorites } from '../redux/favoritesSlice'
 
 export const headerLinks = [
 	{
@@ -61,6 +63,18 @@ export const headerLinks = [
 
 const Header: React.FC = () => {
 	const location = useLocation()
+	const favorites = useSelector(selectFavorites)
+	const isMounted = React.useRef(false)
+
+	React.useEffect(() => {
+		if (isMounted.current) {
+			const json = JSON.stringify(favorites)
+			localStorage.setItem('movies', json)
+			console.log('work!')
+		}
+
+		isMounted.current = true
+	}, [favorites])
 
 	return (
 		<div className='header'>
@@ -105,7 +119,8 @@ const Header: React.FC = () => {
 									fill='white'
 								/>
 							</svg>
-							<span>Мой топ</span>
+							<span>Мой топ </span>
+							<div className='favorites__count'>{favorites.length}</div>
 						</Link>
 					</li>
 					<li className='header__option header__option-menu'>

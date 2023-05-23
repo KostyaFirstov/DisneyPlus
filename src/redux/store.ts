@@ -2,11 +2,13 @@ import { configureStore } from '@reduxjs/toolkit'
 import filter from './filterSlice'
 import { useDispatch } from 'react-redux'
 import movies from './moviesSlice'
+import favorites from './favoritesSlice'
 
 const store = configureStore({
 	reducer: {
 		filter,
-		movies
+		movies,
+		favorites
 	}
 })
 

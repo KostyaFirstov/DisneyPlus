@@ -45,7 +45,7 @@ export const movieSlice = createSlice({
 	initialState,
 	reducers: {},
 	extraReducers: builder => {
-		builder.addCase(fetchMoviesData.pending, (state, action) => {
+		builder.addCase(fetchMoviesData.pending, state => {
 			state.items = []
 			state.status = Status.LOADING
 		})
@@ -53,7 +53,7 @@ export const movieSlice = createSlice({
 			state.items = action.payload
 			state.status = Status.SUCCESS
 		})
-		builder.addCase(fetchMoviesData.rejected, (state, action) => {
+		builder.addCase(fetchMoviesData.rejected, state => {
 			state.items = []
 			state.status = Status.ERROR
 		})
