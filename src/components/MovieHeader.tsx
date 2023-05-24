@@ -6,6 +6,7 @@ import {
 	selectIsFavorite,
 	setFavorites
 } from '../redux/favoritesSlice'
+import { useLocation } from 'react-router-dom'
 
 export type MovieHeaderProps = {
 	id: number
@@ -53,7 +54,7 @@ const MovieHeader: React.FC<MovieHeaderProps> = ({
 
 	React.useEffect(() => {
 		dispatch(isFavoriteItem(id))
-	}, [])
+	}, [id])
 
 	const onAddFavorites = () => {
 		if (!isFavorite) {

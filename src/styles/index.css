@@ -467,7 +467,7 @@ body {
 
 .similaries__wrapper {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 15px;
 }
 .similaries__item,
@@ -937,9 +937,6 @@ body {
 	.header__option-menu {
 		display: block;
 	}
-	.similaries__wrapper {
-		grid-template-columns: repeat(3, 1fr);
-	}
 	.all-movies__filters {
 		flex-direction: column;
 		align-items: baseline;
@@ -1032,6 +1029,9 @@ body {
 	.favorites__btn-remove svg {
 		width: 24px;
 		height: 24px;
+	}
+	.similaries__wrapper {
+		grid-gap: 10px;
 	}
 }
 

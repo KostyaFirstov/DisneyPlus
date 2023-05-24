@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 import { IMovie } from './Movies'
 import axios from 'axios'
 import MovieHeader from '../components/MovieHeader'
@@ -15,6 +15,7 @@ const FullMovie = () => {
 	const modalRef = React.useRef<HTMLDivElement>(null)
 	const modalActersOpenRef = React.useRef<HTMLDivElement>(null)
 	const modalCommentsOpenRef = React.useRef<HTMLDivElement>(null)
+	const location = useLocation()
 
 	React.useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {
@@ -52,7 +53,7 @@ const FullMovie = () => {
 		}
 
 		getMovie()
-	}, [])
+	}, [location])
 
 	const onChangeMembersModal = () => {
 		setMembersModal(prev => !prev)
