@@ -1,7 +1,8 @@
-import { type } from 'os'
 import React from 'react'
-import { selectSort, setSortValue } from '../redux/filterSlice'
+
 import { useDispatch, useSelector } from 'react-redux'
+import { selectSort } from '../redux/filter/selectors'
+import { setSortValue } from '../redux/filter/slice'
 
 export const sortList = [
 	{ name: 'Популярности DESC', sortValue: 'popularity' },
@@ -16,8 +17,9 @@ export const sortList = [
 
 const Sort: React.FC = () => {
 	const [open, setOpen] = React.useState(false)
-	const { sortValue, name } = useSelector(selectSort)
+	const { name } = useSelector(selectSort)
 	const dispatch = useDispatch()
+	const sortRef = React.useRef<HTMLDivElement>(null)
 
 	const changeModal = () => {
 		setOpen(prev => !prev)
@@ -27,6 +29,19 @@ const Sort: React.FC = () => {
 		dispatch(setSortValue(sortList[item]))
 		setOpen(false)
 	}
+
+	React.useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			const _event = event.composedPath()
+
+			if (sortRef.current && !_event.includes(sortRef.current)) {
+				setOpen(false)
+			}
+		}
+
+		document.body.addEventListener('click', handleClickOutside)
+		return () => document.body.addEventListener('click', handleClickOutside)
+	}, [])
 
 	return (
 		<div className='movies__sort'>
@@ -45,7 +60,7 @@ const Sort: React.FC = () => {
 				</svg>
 				Сортировка по:
 			</div>
-			<div className='sort__list'>
+			<div ref={sortRef} className='sort__list'>
 				<span onClick={changeModal} className='sort__item-active'>
 					{name}
 				</span>

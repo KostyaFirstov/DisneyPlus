@@ -1,12 +1,11 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { selectIsFavorite } from '../redux/favorites/selectors'
 import {
 	isFavoriteItem,
 	removeFavorites,
-	selectIsFavorite,
 	setFavorites
-} from '../redux/favoritesSlice'
-import { useLocation } from 'react-router-dom'
+} from '../redux/favorites/slice'
 
 export type MovieHeaderProps = {
 	id: number
@@ -30,8 +29,10 @@ export type MovieHeaderProps = {
 		rating: string
 		likes: string
 	}[]
-	onOpenModal: () => any
-	modalOpenRef?: React.RefObject<HTMLDivElement>
+	onOpenModal?: () => any
+	onOpenTrailerModal?: () => any
+	modalActersOpenRef: React.RefObject<HTMLDivElement>
+	modalTrailerOpenRef: React.RefObject<HTMLButtonElement>
 }
 
 const MovieHeader: React.FC<MovieHeaderProps> = ({
@@ -46,8 +47,10 @@ const MovieHeader: React.FC<MovieHeaderProps> = ({
 	rating,
 	genres,
 	cardImg,
-	modalOpenRef,
-	onOpenModal
+	modalActersOpenRef,
+	modalTrailerOpenRef,
+	onOpenModal,
+	onOpenTrailerModal
 }) => {
 	const dispatch = useDispatch()
 	const isFavorite = useSelector(selectIsFavorite)
@@ -86,10 +89,16 @@ const MovieHeader: React.FC<MovieHeaderProps> = ({
 							<button className='content__btn-fill'>Смотреть фильм</button>
 						</div>
 						<div className='movie__option movie__information'>
-							<button className='content__btn-unfill'>Смотреть трейлер</button>
+							<button
+								ref={modalTrailerOpenRef}
+								onClick={onOpenTrailerModal}
+								className='content__btn-unfill'
+							>
+								Смотреть трейлер
+							</button>
 						</div>
 						<div
-							ref={modalOpenRef}
+							ref={modalActersOpenRef}
 							onClick={onOpenModal}
 							className='movie__option movie__option-creaters'
 						>

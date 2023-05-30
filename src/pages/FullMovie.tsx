@@ -1,43 +1,21 @@
 import React from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { IMovie } from './Movies'
 import axios from 'axios'
 import MovieHeader from '../components/MovieHeader'
-import Comments from '../components/Comments'
 import Similiar from '../components/Similiar'
 import Modal from '../components/Modal'
+import { Loader } from '../components/Loader'
+import VideoPlayer from '../components/VideoPlayer'
 
 const FullMovie = () => {
 	const [movie, setMovie] = React.useState<IMovie>()
 	const [membersModal, setMembersModal] = React.useState(false)
-	const [commentModal, setCommentModal] = React.useState(false)
-	const params = useParams()
+	const [trailerModal, setTrailerModal] = React.useState(false)
 	const modalRef = React.useRef<HTMLDivElement>(null)
 	const modalActersOpenRef = React.useRef<HTMLDivElement>(null)
-	const modalCommentsOpenRef = React.useRef<HTMLDivElement>(null)
-	const location = useLocation()
-
-	React.useEffect(() => {
-		const handleClickOutside = (event: MouseEvent) => {
-			const _event = event.composedPath()
-
-			if (
-				modalActersOpenRef.current &&
-				_event.includes(modalActersOpenRef.current)
-			) {
-			} else if (
-				modalCommentsOpenRef.current &&
-				_event.includes(modalCommentsOpenRef.current)
-			) {
-			} else if (modalRef.current && !_event.includes(modalRef.current)) {
-				setMembersModal(false)
-				setCommentModal(false)
-			}
-		}
-
-		document.body.addEventListener('click', handleClickOutside)
-		return () => document.body.removeEventListener('click', handleClickOutside)
-	}, [])
+	const modalTrailerOpenRef = React.useRef<HTMLButtonElement>(null)
+	const params = useParams()
 
 	React.useEffect(() => {
 		const getMovie = async () => {
@@ -53,19 +31,43 @@ const FullMovie = () => {
 		}
 
 		getMovie()
-	}, [location])
+	}, [params])
 
-	const onChangeMembersModal = () => {
-		setMembersModal(prev => !prev)
+	React.useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			const _event = event.composedPath()
+
+			if (
+				(modalActersOpenRef.current &&
+					_event.includes(modalActersOpenRef.current)) ||
+				(modalTrailerOpenRef.current &&
+					_event.includes(modalTrailerOpenRef.current))
+			) {
+			} else if (modalRef.current && !_event.includes(modalRef.current)) {
+				setMembersModal(false)
+				setTrailerModal(false)
+				document.body.style.overflow = 'auto'
+			}
+		}
+
+		document.body.addEventListener('click', handleClickOutside)
+		return () => document.body.removeEventListener('click', handleClickOutside)
+	}, [])
+
+	const onOpenMembersModal = () => {
+		setMembersModal(true)
+		document.body.style.overflow = 'hidden'
 	}
 
-	const openCommentModal = () => {
-		setCommentModal(prev => !prev)
+	const onOpenTrailerModal = () => {
+		setTrailerModal(true)
+		document.body.style.overflow = 'hidden'
 	}
 
 	const onCloseModal = () => {
 		setMembersModal(false)
-		setCommentModal(false)
+		setTrailerModal(false)
+		document.body.style.overflow = 'auto'
 	}
 
 	if (movie) {
@@ -94,32 +96,20 @@ const FullMovie = () => {
 						})}
 					</Modal>
 				)}
-				<MovieHeader
-					modalOpenRef={modalActersOpenRef}
-					onOpenModal={onChangeMembersModal}
-					{...movie}
-				/>
-				{commentModal && (
+				{trailerModal && (
 					<Modal
 						modalRef={modalRef}
 						onCloseModal={onCloseModal}
-						title='Поделитесь своим впечатлением!'
+						title={`Трейлер "${movie.title}"`}
 					>
-						<form className='form'>
-							<div className='input__item'>
-								<label htmlFor='name'>Ваше имя</label>
-								<input type='text' id='name' />
-							</div>
-							<div className='input__item'>
-								<label htmlFor='message'>Сообщение</label>
-								<textarea name='text' id='message'></textarea>
-							</div>
-						</form>
+						<VideoPlayer />
 					</Modal>
 				)}
-				<Comments
-					modalOpenRef={modalCommentsOpenRef}
-					onOpenModal={openCommentModal}
+				<MovieHeader
+					modalTrailerOpenRef={modalTrailerOpenRef}
+					modalActersOpenRef={modalActersOpenRef}
+					onOpenModal={onOpenMembersModal}
+					onOpenTrailerModal={onOpenTrailerModal}
 					{...movie}
 				/>
 				<Similiar id={movie.id} />
@@ -127,7 +117,7 @@ const FullMovie = () => {
 		)
 	}
 
-	return <h1>Loading...</h1>
+	return <Loader />
 }
 
 export default FullMovie

@@ -1,19 +1,15 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { useAppDispatch } from '../redux/store'
+import { Link } from 'react-router-dom'
 import {
 	selectCategory,
 	selectPage,
 	selectSearch,
 	selectSort
-} from '../redux/filterSlice'
-import {
-	fetchMoviesData,
-	filterOnSimilar,
-	selectMovies,
-	selectSimilars
-} from '../redux/moviesSlice'
-import { useAppDispatch } from '../redux/store'
-import { Link } from 'react-router-dom'
+} from '../redux/filter/selectors'
+import { selectMovies, selectSimilars } from '../redux/movies/selectors'
+import { fetchMoviesData, filterOnSimilar } from '../redux/movies/slice'
 
 type SimiliarProps = {
 	id: number

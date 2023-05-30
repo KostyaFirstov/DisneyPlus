@@ -6,18 +6,15 @@ import Sort from '../components/Sort'
 import Categories from '../components/Categories'
 import Pagination from '../components/Pagination'
 import { useSelector } from 'react-redux'
-import {
-	selectSort,
-	selectCategory,
-	selectSearch,
-	selectPage
-} from '../redux/filterSlice'
-import {
-	fetchMoviesData,
-	selectMovies,
-	selectStatus
-} from '../redux/moviesSlice'
+import { fetchMoviesData } from '../redux/movies/slice'
 import { useAppDispatch } from '../redux/store'
+import {
+	selectCategory,
+	selectPage,
+	selectSearch,
+	selectSort
+} from '../redux/filter/selectors'
+import { selectMovies, selectStatus } from '../redux/movies/selectors'
 
 export interface IMovie {
 	id: number
@@ -45,7 +42,7 @@ export interface IMovie {
 
 const Movies = () => {
 	const { sortValue } = useSelector(selectSort)
-	const loading = useSelector(selectStatus)
+	const status = useSelector(selectStatus)
 	const categoryValue = useSelector(selectCategory)
 	const searchValue = useSelector(selectSearch)
 	const currentPage = useSelector(selectPage)
@@ -85,7 +82,7 @@ const Movies = () => {
 					<Sort />
 				</div>
 				<div className='all-movies__container'>
-					{loading === 'loading'
+					{status === 'loading'
 						? [...new Array(8)].map((item, index) => {
 								return <MoviesSkeleton key={index} />
 						  })
@@ -101,6 +98,14 @@ const Movies = () => {
 								)
 						  })}
 				</div>
+				{status === 'error' && (
+					<div className='error-block'>
+						<h2>
+							При загрузке фильмов произошла ошибка. <br />
+							Попробуйте позже!
+						</h2>
+					</div>
+				)}
 				<Pagination />
 			</div>
 		</section>

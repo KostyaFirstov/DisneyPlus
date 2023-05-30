@@ -1,9 +1,9 @@
 import React from 'react'
 import { headerLinks } from './Header'
 import { Link, useLocation } from 'react-router-dom'
-import { selectFavorites } from '../redux/favoritesSlice'
 import { useDispatch, useSelector } from 'react-redux'
-import { setMenuStatus } from '../redux/menuSlice'
+import { selectFavorites } from '../redux/favorites/selectors'
+import { setMenuStatus } from '../redux/menu/slice'
 
 const Menu = () => {
 	const location = useLocation()

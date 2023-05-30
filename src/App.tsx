@@ -1,17 +1,19 @@
 import React from 'react'
 import './styles/index.css'
 import Home from './pages/Home'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Best from './pages/Best'
 import Movies from './pages/Movies'
 import MainLayout from './layouts/MainLayout'
 import NotFound from './pages/NotFound'
 import FullMovie from './pages/FullMovie'
 import Favorites from './pages/Favorites'
+import { ScrollToTop } from './components/ScrollToTop'
 
 function App() {
 	return (
 		<div className='App'>
+			<ScrollToTop />
 			<Routes>
 				<Route path='/' element={<MainLayout />}>
 					<Route path='/' element={<Home />} />

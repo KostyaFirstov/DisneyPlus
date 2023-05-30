@@ -1,11 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
-import { RootState } from './store'
-
-export type SortType = { name: string; sortValue: string }
-
-interface IMenuSliceState {
-	status: boolean
-}
+import { IMenuSliceState } from './types'
 
 const initialState: IMenuSliceState = {
 	status: false
@@ -20,8 +14,6 @@ export const menuSlice = createSlice({
 		}
 	}
 })
-
-export const selectMenuStatus = (state: RootState) => state.menu.status
 
 export const { setMenuStatus } = menuSlice.actions
 export default menuSlice.reducer

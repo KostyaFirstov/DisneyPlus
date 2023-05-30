@@ -1,16 +1,7 @@
 import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { RootState } from './store'
 import axios from 'axios'
-import { IMovie } from '../pages/Movies'
-import { SortType } from './filterSlice'
-
-type FetchMoviesParams = {
-	currentPage: number
-	category: string
-	sortBy: string
-	order: string
-	search: string
-}
+import { IMovie } from '../../pages/Movies'
+import { FetchMoviesParams, IMovieState, Status } from './types'
 
 export const fetchMoviesData = createAsyncThunk<IMovie[], FetchMoviesParams>(
 	'users/fetchMoviesData',
@@ -23,18 +14,6 @@ export const fetchMoviesData = createAsyncThunk<IMovie[], FetchMoviesParams>(
 		return data
 	}
 )
-
-enum Status {
-	LOADING = 'loading',
-	SUCCESS = 'success',
-	ERROR = 'error'
-}
-
-interface IMovieState {
-	items: IMovie[]
-	similar: IMovie[]
-	status: Status
-}
 
 const initialState: IMovieState = {
 	items: [],
@@ -65,10 +44,6 @@ export const movieSlice = createSlice({
 		})
 	}
 })
-
-export const selectStatus = (state: RootState) => state.movies.status
-export const selectMovies = (state: RootState) => state.movies.items
-export const selectSimilars = (state: RootState) => state.movies.similar
 
 export const { filterOnSimilar } = movieSlice.actions
 export default movieSlice.reducer

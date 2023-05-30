@@ -1,7 +1,7 @@
 import React from 'react'
-import { setSearchValue } from '../redux/filterSlice'
 import { useDispatch } from 'react-redux'
 import debounce from 'lodash.debounce'
+import { setSearchValue } from '../redux/filter/slice'
 
 const Search = () => {
 	const inputRef = React.useRef<HTMLInputElement>(null)

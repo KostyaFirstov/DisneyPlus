@@ -7,7 +7,7 @@ import Slider from '../components/Slider'
 const Home = () => {
 	return (
 		<>
-			{/* <MovieHeader {...[]} /> */}
+			{/* <MovieHeader /> */}
 			<Brands />
 			<TopMovies />
 			<Slider name='Топ фильмов' />

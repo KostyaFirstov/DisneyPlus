@@ -1,7 +1,8 @@
 import React from 'react'
+import VideoPlayer from '../components/VideoPlayer'
 
 const Best = () => {
-	return <div>Best</div>
+	return <h1>Лучшее</h1>
 }
 
 export default Best

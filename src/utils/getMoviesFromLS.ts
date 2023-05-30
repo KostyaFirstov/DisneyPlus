@@ -1,5 +1,5 @@
 import React from 'react'
-import { FavoritesItem } from '../redux/favoritesSlice'
+import { FavoritesItem } from '../redux/favorites/types'
 
 export const getMoviesFromLS = () => {
 	const data = localStorage.getItem('movies')

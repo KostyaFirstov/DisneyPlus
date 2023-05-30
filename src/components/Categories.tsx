@@ -1,6 +1,7 @@
 import React from 'react'
-import { selectCategory, setCategoryValue } from '../redux/filterSlice'
 import { useDispatch, useSelector } from 'react-redux'
+import { selectCategory } from '../redux/filter/selectors'
+import { setCategoryValue } from '../redux/filter/slice'
 
 const Categories: React.FC = () => {
 	const categoriesList = [

@@ -1,17 +1,6 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
-import { RootState } from './store'
-import { getMoviesFromLS } from '../utils/getMoviesFromLS'
-
-export type FavoritesItem = {
-	id: number
-	title: string
-	cardImg: string
-}
-
-interface IFavoritesState {
-	favorites: FavoritesItem[]
-	isFavorite: boolean
-}
+import { getMoviesFromLS } from '../../utils/getMoviesFromLS'
+import { FavoritesItem, IFavoritesState } from './types'
 
 const initialState: IFavoritesState = getMoviesFromLS()
 
@@ -39,9 +28,6 @@ export const favoritesSlice = createSlice({
 		}
 	}
 })
-
-export const selectFavorites = (state: RootState) => state.favorites.favorites
-export const selectIsFavorite = (state: RootState) => state.favorites.isFavorite
 
 export const { setFavorites, removeFavorites, isFavoriteItem, clearFavorites } =
 	favoritesSlice.actions

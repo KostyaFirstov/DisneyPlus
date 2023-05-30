@@ -1,11 +1,8 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import {
-	clearFavorites,
-	removeFavorites,
-	selectFavorites
-} from '../redux/favoritesSlice'
 import { Link } from 'react-router-dom'
+import { selectFavorites } from '../redux/favorites/selectors'
+import { clearFavorites, removeFavorites } from '../redux/favorites/slice'
 
 const Favorites = () => {
 	const favorites = useSelector(selectFavorites)
