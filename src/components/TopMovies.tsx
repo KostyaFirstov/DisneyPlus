@@ -2,13 +2,15 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper'
 import 'swiper/css'
+import { ISliderProps } from './Slider'
+import { Link } from 'react-router-dom'
 
-const Top = () => {
+const Top: React.FC<ISliderProps> = ({ name, link, movies }) => {
 	return (
 		<section className='movies'>
 			<div className='movies__container'>
-				<div className='movies__title title container-right'>
-					<h2>Лучшее в мире</h2>
+				<Link to={link} className='movies__title title container-right'>
+					<h2>{name}</h2>
 					<svg
 						width='24'
 						height='24'
@@ -21,7 +23,7 @@ const Top = () => {
 							fill='white'
 						/>
 					</svg>
-				</div>
+				</Link>
 
 				<div className='top-movies-slider'>
 					<Swiper
@@ -45,21 +47,27 @@ const Top = () => {
 							}
 						}}
 					>
-						<SwiperSlide className='top-movies-slide swiper-slide'>
-							<img src='./images/card/movie/image-3.jpg' alt='' />
-						</SwiperSlide>
-						<SwiperSlide className='top-movies-slide swiper-slide'>
-							<img src='./images/card/movie/image-2.jpg' alt='' />
-						</SwiperSlide>
-						<SwiperSlide className='top-movies-slide swiper-slide'>
-							<img src='./images/card/movie/image-3.jpg' alt='' />
-						</SwiperSlide>
-						<SwiperSlide className='top-movies-slide swiper-slide'>
-							<img src='./images/card/movie/image-4.jpg' alt='' />
-						</SwiperSlide>
-						<SwiperSlide className='top-movies-slide swiper-slide'>
-							<img src='./images/card/movie/image-5.jpg' alt='' />
-						</SwiperSlide>
+						{movies.map((item, index) => {
+							return (
+								<SwiperSlide
+									key={item.id}
+									className='top-movies-slide swiper-slide'
+								>
+									<Link to={`/movie/${item.id}`}>
+										<img src={item.backgroundImg} alt={item.title} />
+										<div className='top-movies__info'>
+											<div className='top-movies__title'>
+												<h2>{item.title}</h2>
+											</div>
+											<div className='top-movies__place'>
+												{index + 1} <span>{item.popularity}</span>
+											</div>
+										</div>
+										<div className='top-movies__blur'></div>
+									</Link>
+								</SwiperSlide>
+							)
+						})}
 					</Swiper>
 				</div>
 				<div className='movies-pagination'></div>

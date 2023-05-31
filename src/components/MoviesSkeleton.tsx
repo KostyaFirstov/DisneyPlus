@@ -5,8 +5,8 @@ const MoviesSkeleton = (props: any) => {
 	return (
 		<ContentLoader
 			speed={2}
-			width={320}
-			height={180}
+			width='100%'
+			height='100%'
 			viewBox='0 0 320 180'
 			backgroundColor='#40464E'
 			foregroundColor='#6F757D'

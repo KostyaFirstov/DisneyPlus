@@ -21,7 +21,11 @@ type VideoProgress = {
 	loadedSeconds: number
 }
 
-const VideoPlayer = () => {
+interface VideoPlayerProps {
+	trailer: string
+}
+
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ trailer }) => {
 	const [options, setOptions] = React.useState<IVideoOptions>({
 		playing: false,
 		volume: 0.1,
@@ -111,11 +115,12 @@ const VideoPlayer = () => {
 				playing={playing}
 				controls={false}
 				volume={volume}
-				url='https://youtu.be/9IHYsdO7Sug'
+				url={trailer}
 				ref={playerRef}
 				onProgress={handleProgress}
 				onBuffer={bufferStartHandler}
 				onBufferEnd={bufferEndHandler}
+				config={{ youtube: { playerVars: { disablekb: 1 } } }}
 			/>
 			{!buffer ? (
 				<ControlsVideo

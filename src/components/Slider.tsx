@@ -2,16 +2,20 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper'
 import 'swiper/css'
+import { Link } from 'react-router-dom'
+import { IMovie } from '../pages/Movies'
 
-type SliderProps = {
+export interface ISliderProps {
 	name: string
+	link: string
+	movies: IMovie[]
 }
 
-const Slider: React.FC<SliderProps> = ({ name }) => {
+const Slider: React.FC<ISliderProps> = ({ name, link, movies }) => {
 	return (
 		<section className='movies'>
 			<div className='movies__container'>
-				<div className='movies__title title container-right'>
+				<Link to={link} className='movies__title title container-right'>
 					<h2>{name}</h2>
 					<svg
 						width='24'
@@ -25,7 +29,7 @@ const Slider: React.FC<SliderProps> = ({ name }) => {
 							fill='white'
 						/>
 					</svg>
-				</div>
+				</Link>
 				<Swiper
 					className='container-right top-movies-wrapper'
 					modules={[Pagination]}
@@ -55,21 +59,18 @@ const Slider: React.FC<SliderProps> = ({ name }) => {
 						}
 					}}
 				>
-					<SwiperSlide className='usual-movies-slide swiper-slide'>
-						<img src='./images/card/usual/movie-card01.jpg' alt='' />
-					</SwiperSlide>
-					<SwiperSlide className='usual-movies-slide swiper-slide'>
-						<img src='./images/card/usual/movie-card02.jpg' alt='' />
-					</SwiperSlide>
-					<SwiperSlide className='usual-movies-slide swiper-slide'>
-						<img src='./images/card/usual/movie-card03.jpg' alt='' />
-					</SwiperSlide>
-					<SwiperSlide className='usual-movies-slide swiper-slide'>
-						<img src='./images/card/usual/movie-card04.jpg' alt='' />
-					</SwiperSlide>
-					<SwiperSlide className='usual-movies-slide swiper-slide'>
-						<img src='./images/card/usual/movie-card05.jpg' alt='' />
-					</SwiperSlide>
+					{movies.map(item => {
+						return (
+							<SwiperSlide
+								key={item.id}
+								className='usual-movies-slide swiper-slide'
+							>
+								<Link to={`/movie/${item.id}`}>
+									<img src={item.cardImg} alt={item.title} />
+								</Link>
+							</SwiperSlide>
+						)
+					})}
 				</Swiper>
 				<div className='movies-pagination'></div>
 			</div>

@@ -77,7 +77,7 @@ const FullMovie = () => {
 					<Modal
 						modalRef={modalRef}
 						onCloseModal={onCloseModal}
-						title='Участники:'
+						title='Съёмочная группа:'
 					>
 						{movie.members.map((item, index) => {
 							return (
@@ -102,7 +102,7 @@ const FullMovie = () => {
 						onCloseModal={onCloseModal}
 						title={`Трейлер "${movie.title}"`}
 					>
-						<VideoPlayer />
+						<VideoPlayer trailer={movie.trailer} />
 					</Modal>
 				)}
 				<MovieHeader

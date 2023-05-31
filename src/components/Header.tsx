@@ -60,7 +60,7 @@ export const headerLinks = [
 			</svg>
 		),
 		link: '/top',
-		text: 'Лучшее в мире'
+		text: 'Самое популярное'
 	}
 ]
 

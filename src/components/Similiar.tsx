@@ -50,7 +50,7 @@ const Similiar: React.FC<SimiliarProps> = ({ id }) => {
 		<section className='similaries'>
 			<div className='container'>
 				<div className='title'>
-					<h2>Смотрите также</h2>
+					<h2>Похожие фильмы</h2>
 				</div>
 				<div className='similaries__wrapper'>
 					{similars.map((item, index) => {

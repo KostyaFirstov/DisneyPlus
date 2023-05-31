@@ -38,6 +38,7 @@ export interface IMovie {
 		rating: string
 		likes: string
 	}[]
+	trailer: string
 }
 
 const Movies = () => {
